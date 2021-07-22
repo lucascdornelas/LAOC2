@@ -1,36 +1,33 @@
-module alu (control, A,  BusWires, G);
+module alu(control, A,  BusWires, G);
 	input [2:0] control;
 	input [15:0] A, BusWires;
 	output reg [15:0] G;
 	
-	/* 
-		intructions: 
-			000 = add
-			001 = sub
-			010 = or
-			011 = slt
-			100 = sll
-			101 = srl
-	*/
+	parameter add  = 3'b000; 
+	parameter sub  = 3'b001;
+	parameter orr  = 3'b010;
+	parameter slt  = 3'b011;
+	parameter sll  = 3'b100;
+	parameter srl  = 3'b101;
 	
 	always@(*)begin
 		case(control)
-			3'b000: 
+			add: 
 				G = A + BusWires;  
 				
-			3'b001: 
+			sub: 
 				G = A - BusWires;
 
-			3'b010: 
+			orr: 
 				G = A | BusWires;
 
-			3'b011: 
+			slt: 
 				G = (A < BusWires) ? 1:0;
 
-			3'b100: 
+			sll: 
 				G = A << BusWires;
 
-			3'b101: 
+			srl: 
 				G = A >> BusWires;
 		endcase
 	end

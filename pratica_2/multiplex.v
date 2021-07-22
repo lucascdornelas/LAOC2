@@ -1,43 +1,43 @@
-module multiplex (din, r0, r1, r2, r3, r4, r5, r6, pc, g, control, out);
-	input [0:9]  control;
-	input [15:0] din, r0, r1, r2, r3, r4, r5, r6, g;
-	input [5:0] pc;
+module multiplex (
+	input [15:0] din, r0, r1, r2, r3, r4, r5, r6, g, 
+	input [0:9] control,
+	input [5:0] pc,
+	output reg [15:0] MUXOut
+	);
 
-	output reg [15:0] out;
 
-
-	always@(control) 
+	always@(control)
 		begin
 				case (control)
 					10'b1000000000: 
-						out = din;
+						MUXOut = din;
 						
 					10'b0100000000: 
-						out = r0;
+						MUXOut = r0;
 					
 					10'b0010000000: 
-						out = r1;
+						MUXOut = r1;
 					
 					10'b0001000000: 
-						out = r2;
+						MUXOut = r2;
 					
 					10'b0000100000: 
-						out = r3;
+						MUXOut = r3;
 					
 					10'b0000010000: 
-						out = r4;
+						MUXOut = r4;
 					
 					10'b0000001000: 
-						out = r5;
+						MUXOut = r5;
 					
 					10'b0000000100: 
-						out = r6;
+						MUXOut = r6;
 					
 					10'b0000000010: 
-						out = {5'b0,pc};
+						MUXOut = {5'b0,pc};
 					
 					10'b0000000001: 
-						out = g;
+						MUXOut = g;
 				endcase
 		end
 endmodule

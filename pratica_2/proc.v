@@ -1,12 +1,12 @@
-module proc(DIN, mem, Resetn, Clock, Run, Done, BusWires, pc, addrM, doutM, wM);
-	input [15:0] DIN;
-	input [15:0] mem;
-	input Resetn, Clock, Run;
+module proc(
+	input [15:0] DIN, mem, 
+	input Resetn, Clock, Run, 
 	
-	output reg Done;
-	output [5:0] pc;
-	output [15:0] BusWires, addrM, doutM;
-	output wM;
+	output reg Done, 
+	output [5:0] pc,
+	output [15:0] BusWires, addrM, doutM, 
+	output wM
+	);
 	
 	wire Clear = Done | Resetn;		
 	
@@ -20,7 +20,7 @@ module proc(DIN, mem, Resetn, Clock, Run, Done, BusWires, pc, addrM, doutM, wM);
 	wire [3:0] I;	
 	
 	// time steps
-	wire [1:0] TstepQ;		
+	wire [2:0] TstepQ;		
 	
 	// signals
 	reg dinOut, gOut, memOut, incr_pc, aIn, gIn, irIn, addrIn, doutIn, wIn;
@@ -29,9 +29,24 @@ module proc(DIN, mem, Resetn, Clock, Run, Done, BusWires, pc, addrM, doutM, wM);
 		
 	// control
 	assign I = IR[3:0];
+	
 	dec3to8 decX (IR[6:4], 1'b1, Xreg);
 	dec3to8 decY (IR[9:7], 1'b1, Yreg);	
 	upcount tstep (Clear, Clock, TstepQ);
+	
+	// paramenters
+	parameter mv   = 4'b0000;
+	parameter mvi  = 4'b0001;
+	parameter mvnz = 4'b0011;
+	parameter ld   = 4'b0100;
+	parameter sd =   4'b0101;
+
+	parameter add  = 4'b0110;
+	parameter sub  = 4'b0111;
+	parameter orr  = 4'b1000;
+	parameter slt  = 4'b1001;
+	parameter sll  = 4'b1010;
+	parameter srl  = 4'b1011;
 
 	always @(TstepQ or I or Xreg or Yreg) begin
 	
@@ -52,147 +67,175 @@ module proc(DIN, mem, Resetn, Clock, Run, Done, BusWires, pc, addrM, doutM, wM);
 		
 		if (Run) begin
 			case (TstepQ)
-				2'b00: 													// load instruction time step 0
+				3'b000: 				// load instruction time step 0
 					begin
-						regOut = 8'b00000001;
 						irIn = 1'b1;
-						incr_pc = 1; 
+						incr_pc = 1; // incrementa em pc
 					end	
 					
-				2'b01: 													//define signals in time step 1
+				3'b001: // store instruction time step 1 
+					begin					
+					end	
+					
+				3'b010: //define signals in time step 1
 					case (I)				
-						4'b0000: 								// mv
-							begin									 
-								regOut = Yreg;
-								regIn = Xreg;
-								Done = 1'b1;							
+						// mv -> copy a data to another reg
+						mv: begin	
+							regOut = Yreg;
+							regIn = Xreg;
+							Done = 1'b1;							
+						end
+						// mvi -> move the DIN to an reg
+						mvi: begin							
+							regIn = Xreg;
+							dinOut = 1'b1;
+							Done = 1'b1;
+							incr_pc = 1;	// aumente novamente o pc, pois salva o valor de um imediato de 15 bits
+						end
+						// mvnz -> (move if not zero) allows a mv operation to be executed only under a certain condition
+						mvnz: begin							
+							if (G != 0) begin
+							  regOut = Yreg;
+							  regIn = Xreg;
 							end
-						
-						4'b0001: 								// mvi	
-							begin													
-								// todo: implement mvi
-							end
-							
-						4'b0010: 
-							begin 
-							end
-						
-						4'b0011: 								// mvnz
-							begin									
-								if (G != 0) 
-									begin
-										regOut = Yreg;
-										regIn = Xreg;
-									end
-								Done = 1;
-							end
-						
-						4'b0100: 								// load -> load data from memory
-							begin														
-								regOut = Yreg;
-								addrIn = 1;	
-							end
-						
-						
-						4'b0101: 								// store -> write on memory 
-							begin														
-								regOut = Xreg;
-								doutIn = 1;
-							end
-						
-						4'b0110: 								// add
-							begin															
-								regOut = Xreg;
-								aIn = 1;
-							end
-						 
-						4'b0111: 								// sub
-							begin														
-								regOut = Xreg;
-								aIn = 1;
-							end
-						
-						4'b1000: 								// or
-							begin 												
-								regOut = Xreg;
-								aIn = 1;
-							end
-						
-						4'b1001: 								// slt
-							begin 								
-								regOut = Xreg;
-								aIn = 1;
-							end
-						
-						4'b1010: 								// sll
-							begin 								
-								regOut = Xreg;
-								aIn = 1;
-							end
-						
-						4'b1011: 								// srl
-							begin 								
-								regOut = Xreg;
-								aIn = 1;
-							end
+							Done = 1;
+						end
+						// ld -> load data from memory
+						ld: begin							
+							regOut = Yreg;
+							addrIn = 1;
+						end
+						// sd -> write on memory
+						sd: begin							
+							regOut = Xreg;
+							doutIn = 1;
+						end
+						// add -> add the data of two regs
+						add: begin							
+							regOut = Xreg;
+							aIn = 1;
+						end
+						// sub -> subtract the data of two regs
+						sub: begin							
+							regOut = Xreg;
+							aIn = 1;
+						end
+						// Or
+						orr: begin
+							regOut = Xreg;
+							aIn = 1;
+						end
+						// Slt
+						slt: begin
+							regOut = Xreg;
+							aIn = 1;
+						end
+						// Sll
+						sll: begin
+							regOut = Xreg;
+							aIn = 1;
+						end
+						// Srl
+						srl: begin
+							regOut = Xreg;
+							aIn = 1;
+						end
 					endcase
 					
-				2'b10: 													//define signals in time step 2
-				 if(I > 4'b0101) 
-					begin
-						gIn = 1'b1;
-						regOut = Yreg;
-						case (I)				
-							4'b0110:    aluControl = 3'b000;
-                     4'b0111:    aluControl = 3'b001;
-                     4'b1000:    aluControl = 3'b010;
-                     4'b1001: 	aluControl = 3'b011;
-                     4'b1010: 	aluControl = 3'b100;
-                     4'b1011: 	aluControl = 3'b101;	
-						endcase
-					end
-					else 
-						begin 
-							if(I == 4'b0101) 
-								begin
-									regOut = Yreg;
-									addrIn = 1;
-									wIn = 1;
-								end	
-						
-							//if(I == 4'b0100) 
-							//	begin
-							//		dinOut = 1'b1;
-							//		regIn = Xreg;
-							//		Done = 1;
-							//	end
-						
-							if(I == 4'b0001) 
-								begin
-									regIn = Xreg;
-									dinOut = 1'b1;
-									Done = 1'b1;
-									#20 regOut = 5'b00001;
-									incr_pc = 1;
-								end
-						end
 					
-				2'b11: 													//define signals in time step 3
-					if(I > 4'b0101) 
-						begin
-							gOut = 1'b1;
+				3'b011: //define signals in time step 2
+					case (I)
+						// load -> load data from memory
+						ld: begin							
 							regIn = Xreg;
-							Done = 1'b1;
+							memOut = 1;
+							Done = 1;
 						end
-					else 
-						begin
-							if(I == 4'b0100) 
-								begin
-									regIn = Xreg;
-									memOut = 1;
-									Done = 1'b1;
-								end
+						// store -> write on memory
+						sd: begin							
+							regOut = Yreg;
+							addrIn = 1;
+							wIn = 1;
+							Done = 1;
 						end
+						// add -> add the data of two regs
+						add: begin							
+							regOut = Yreg;
+							gIn = 1;
+							aluControl = 4'b0000;
+						end
+						// sub -> subtract the data of two regs
+						sub: begin							
+							regOut = Yreg;
+							gIn = 1;
+							aluControl = 4'b0001;
+						end
+						// Or
+						orr: begin
+							regOut = Yreg;
+							gIn = 1;
+							aluControl = 4'b0010;
+						end
+						// Slt
+						slt: begin
+							regOut = Yreg;
+							gIn = 1;
+							aluControl = 4'b0011;
+						end
+						// Sll
+						sll: begin
+							regOut = Yreg;
+							gIn = 1;
+							aluControl = 4'b0100;
+						end
+						// Srl
+						srl: begin
+							regOut = Yreg;
+							gIn = 1;
+							aluControl = 4'b0101;
+						end
+					endcase
+					
+					
+				3'b100: //define signals in time step 3
+					case (I)						
+						// add -> add the data of two regs
+						add: begin							
+							regIn = Xreg;
+							gOut = 1;
+							Done = 1;
+						end
+						// sub -> subtract the data of two regs
+						sub: begin							
+							regIn = Xreg;
+							gOut = 1;
+							Done = 1;
+						end
+						// Or
+						orr: begin
+							regIn = Xreg;
+							gOut = 1;
+							Done = 1;
+						end
+						// Slt
+						slt: begin
+							regIn = Xreg;
+							gOut = 1;
+							Done = 1;
+						end
+						// Sll
+						sll: begin
+							regIn = Xreg;
+							gOut = 1;
+							Done = 1;
+						end
+						// Srl
+						srl: begin
+							regIn = Xreg;
+							gOut = 1;
+							Done = 1;
+						end					
+					endcase					
 			endcase
 		end
 	end

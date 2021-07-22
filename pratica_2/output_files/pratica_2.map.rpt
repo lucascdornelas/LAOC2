@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pratica_2
-Thu Jul 22 14:04:12 2021
+Thu Jul 22 16:55:08 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -29,21 +29,24 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  21. Parameter Settings for User Entity Instance: proc:proc|regn:reg_5
  22. Parameter Settings for User Entity Instance: proc:proc|regn:reg_6
  23. Parameter Settings for User Entity Instance: proc:proc|lpmcounter:count|lpm_counter:LPM_COUNTER_component
- 24. Parameter Settings for User Entity Instance: proc:proc|regn:reg_A
- 25. Parameter Settings for User Entity Instance: proc:proc|regn:reg_G
- 26. Parameter Settings for User Entity Instance: proc:proc|regn:reg_IR
- 27. Parameter Settings for User Entity Instance: proc:proc|regn:reg_Addr
- 28. Parameter Settings for User Entity Instance: proc:proc|regn:reg_Dout
- 29. Parameter Settings for User Entity Instance: proc:proc|regn:reg_W
- 30. altsyncram Parameter Settings by Entity Instance
- 31. Port Connectivity Checks: "proc:proc|regn:reg_W"
- 32. Port Connectivity Checks: "proc:proc|lpmcounter:count"
- 33. Port Connectivity Checks: "proc:proc|dec3to8:decY"
- 34. Port Connectivity Checks: "proc:proc|dec3to8:decX"
- 35. Port Connectivity Checks: "proc:proc"
- 36. Port Connectivity Checks: "ramlpm:memory"
- 37. Elapsed Time Per Partition
- 38. Analysis & Synthesis Messages
+ 24. Parameter Settings for User Entity Instance: proc:proc|alu:alu
+ 25. Parameter Settings for User Entity Instance: proc:proc|regn:reg_A
+ 26. Parameter Settings for User Entity Instance: proc:proc|regn:reg_G
+ 27. Parameter Settings for User Entity Instance: proc:proc|regn:reg_IR
+ 28. Parameter Settings for User Entity Instance: proc:proc|regn:reg_Addr
+ 29. Parameter Settings for User Entity Instance: proc:proc|regn:reg_Dout
+ 30. Parameter Settings for User Entity Instance: proc:proc|regn:reg_W
+ 31. altsyncram Parameter Settings by Entity Instance
+ 32. Port Connectivity Checks: "proc:proc|multiplex:multiplex"
+ 33. Port Connectivity Checks: "proc:proc|regn:reg_W"
+ 34. Port Connectivity Checks: "proc:proc|lpmcounter:count"
+ 35. Port Connectivity Checks: "proc:proc|upcount:tstep"
+ 36. Port Connectivity Checks: "proc:proc|dec3to8:decY"
+ 37. Port Connectivity Checks: "proc:proc|dec3to8:decX"
+ 38. Port Connectivity Checks: "proc:proc"
+ 39. Port Connectivity Checks: "ramlpm:memory"
+ 40. Elapsed Time Per Partition
+ 41. Analysis & Synthesis Messages
 
 
 
@@ -69,7 +72,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jul 22 14:04:12 2021           ;
+; Analysis & Synthesis Status        ; Successful - Thu Jul 22 16:55:08 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pratica_2                                       ;
 ; Top-level Entity Name              ; pratica_2                                       ;
@@ -298,8 +301,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------------------+-------------------------------------------------------------------------------------+
 ; Register name             ; Reason for Removal ; Registers Removed due to This Register                                              ;
 +---------------------------+--------------------+-------------------------------------------------------------------------------------+
-; proc:proc|regn:reg_W|Q[0] ; Lost Fanouts       ; proc:proc|regn:reg_IR|Q[0], proc:proc|regn:reg_IR|Q[2], proc:proc|regn:reg_IR|Q[3], ;
-;                           ;                    ; proc:proc|upcount:tstep|Q[0], proc:proc|upcount:tstep|Q[1]                          ;
+; proc:proc|regn:reg_W|Q[0] ; Lost Fanouts       ; proc:proc|regn:reg_IR|Q[1], proc:proc|regn:reg_IR|Q[0], proc:proc|regn:reg_IR|Q[2], ;
+;                           ;                    ; proc:proc|regn:reg_IR|Q[3], proc:proc|upcount:tstep|Q[0],                           ;
+;                           ;                    ; proc:proc|upcount:tstep|Q[1]                                                        ;
 +---------------------------+--------------------+-------------------------------------------------------------------------------------+
 
 
@@ -555,6 +559,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: proc:proc|alu:alu ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; add            ; 000   ; Unsigned Binary                       ;
+; sub            ; 001   ; Unsigned Binary                       ;
+; orr            ; 010   ; Unsigned Binary                       ;
+; slt            ; 011   ; Unsigned Binary                       ;
+; sll            ; 100   ; Unsigned Binary                       ;
+; srl            ; 101   ; Unsigned Binary                       ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: proc:proc|regn:reg_A ;
 +----------------+-------+------------------------------------------+
@@ -646,6 +665,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+------------------------------------------------------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "proc:proc|multiplex:multiplex"                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; g       ; Input ; Warning  ; Input port expression (6 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "g[15..6]" will be connected to GND.                                        ;
+; control ; Input ; Warning  ; Input port expression (16 bits) is wider than the input port (10 bits) it drives.  The 6 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pc      ; Input ; Warning  ; Input port expression (10 bits) is wider than the input port (6 bits) it drives.  The 4 most-significant bit(s) in the expression will be dangling if they have no other fanouts.  ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +--------------------------------------------------+
 ; Port Connectivity Checks: "proc:proc|regn:reg_W" ;
 +------+-------+----------+------------------------+
@@ -662,6 +692,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+----------------------------+
 ; clk_en ; Input ; Info     ; Stuck at VCC               ;
 +--------+-------+----------+----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "proc:proc|upcount:tstep"                                                                                                                                              ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Q    ; Output ; Warning  ; Output or bidir port (2 bits) is smaller than the port expression (3 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------+
@@ -682,15 +721,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+--------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "proc:proc"                                                                                  ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                             ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; Done         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; BusWires     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; addrM[15..5] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "proc:proc"                                                                                                                                                                      ;
++--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                                                                                                                 ;
++--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Done         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                     ;
+; pc           ; Output ; Warning  ; Output or bidir port (6 bits) is smaller than the port expression (16 bits) it drives.  The 10 most-significant bit(s) in the port expression will be connected to GND. ;
+; pc[5..0]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                     ;
+; BusWires     ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (6 bits) it drives; bit(s) "BusWires[15..6]" have no fanouts                                           ;
+; addrM[15..5] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                     ;
++--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------+
@@ -717,7 +758,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Jul 22 14:04:11 2021
+    Info: Processing started: Thu Jul 22 16:55:06 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pratica_2 -c pratica_2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file dec3to8.v
@@ -787,10 +828,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (12128): Elaborating entity "altsyncram_l4a1" for hierarchy "ramlpm:memory|altsyncram:altsyncram_component|altsyncram_l4a1:auto_generated"
 Info (12128): Elaborating entity "proc" for hierarchy "proc:proc"
 Warning (10036): Verilog HDL or VHDL warning at proc.v(26): object "memOut" assigned a value but never read
-Warning (10235): Verilog HDL Always Construct warning at proc.v(53): variable "Run" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at proc.v(82): variable "G" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10270): Verilog HDL Case Statement warning at proc.v(63): incomplete case statement has no default case item
-Warning (10270): Verilog HDL Case Statement warning at proc.v(145): incomplete case statement has no default case item
+Warning (10235): Verilog HDL Always Construct warning at proc.v(54): variable "Run" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at proc.v(83): variable "G" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at proc.v(67): incomplete case statement has no default case item
+Warning (10230): Verilog HDL assignment warning at proc.v(151): truncated value with size 4 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at proc.v(157): truncated value with size 4 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at proc.v(163): truncated value with size 4 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at proc.v(169): truncated value with size 4 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at proc.v(175): truncated value with size 4 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at proc.v(181): truncated value with size 4 to match size of target (3)
+Warning (10272): Verilog HDL Case Statement warning at proc.v(178): case item expression covers a value already covered by a previous case item
+Warning (10270): Verilog HDL Case Statement warning at proc.v(133): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at proc.v(187): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at proc.v(55): incomplete case statement has no default case item
 Info (12128): Elaborating entity "dec3to8" for hierarchy "proc:proc|dec3to8:decX"
 Info (12128): Elaborating entity "upcount" for hierarchy "proc:proc|upcount:tstep"
 Warning (12125): Using design file regn.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -812,25 +862,25 @@ Info (12128): Elaborating entity "cntr_ubk" for hierarchy "proc:proc|lpmcounter:
 Warning (12125): Using design file alu.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: alu
 Info (12128): Elaborating entity "alu" for hierarchy "proc:proc|alu:alu"
-Warning (10230): Verilog HDL assignment warning at alu.v(28): truncated value with size 32 to match size of target (16)
-Warning (10270): Verilog HDL Case Statement warning at alu.v(17): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at alu.v(17): inferring latch(es) for variable "G", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "G[0]" at alu.v(17)
-Info (10041): Inferred latch for "G[1]" at alu.v(17)
-Info (10041): Inferred latch for "G[2]" at alu.v(17)
-Info (10041): Inferred latch for "G[3]" at alu.v(17)
-Info (10041): Inferred latch for "G[4]" at alu.v(17)
-Info (10041): Inferred latch for "G[5]" at alu.v(17)
-Info (10041): Inferred latch for "G[6]" at alu.v(17)
-Info (10041): Inferred latch for "G[7]" at alu.v(17)
-Info (10041): Inferred latch for "G[8]" at alu.v(17)
-Info (10041): Inferred latch for "G[9]" at alu.v(17)
-Info (10041): Inferred latch for "G[10]" at alu.v(17)
-Info (10041): Inferred latch for "G[11]" at alu.v(17)
-Info (10041): Inferred latch for "G[12]" at alu.v(17)
-Info (10041): Inferred latch for "G[13]" at alu.v(17)
-Info (10041): Inferred latch for "G[14]" at alu.v(17)
-Info (10041): Inferred latch for "G[15]" at alu.v(17)
+Warning (10230): Verilog HDL assignment warning at alu.v(25): truncated value with size 32 to match size of target (16)
+Warning (10270): Verilog HDL Case Statement warning at alu.v(14): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at alu.v(14): inferring latch(es) for variable "G", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "G[0]" at alu.v(14)
+Info (10041): Inferred latch for "G[1]" at alu.v(14)
+Info (10041): Inferred latch for "G[2]" at alu.v(14)
+Info (10041): Inferred latch for "G[3]" at alu.v(14)
+Info (10041): Inferred latch for "G[4]" at alu.v(14)
+Info (10041): Inferred latch for "G[5]" at alu.v(14)
+Info (10041): Inferred latch for "G[6]" at alu.v(14)
+Info (10041): Inferred latch for "G[7]" at alu.v(14)
+Info (10041): Inferred latch for "G[8]" at alu.v(14)
+Info (10041): Inferred latch for "G[9]" at alu.v(14)
+Info (10041): Inferred latch for "G[10]" at alu.v(14)
+Info (10041): Inferred latch for "G[11]" at alu.v(14)
+Info (10041): Inferred latch for "G[12]" at alu.v(14)
+Info (10041): Inferred latch for "G[13]" at alu.v(14)
+Info (10041): Inferred latch for "G[14]" at alu.v(14)
+Info (10041): Inferred latch for "G[15]" at alu.v(14)
 Info (12128): Elaborating entity "regn" for hierarchy "proc:proc|regn:reg_IR"
 Warning (10230): Verilog HDL assignment warning at regn.v(8): truncated value with size 16 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at regn.v(12): truncated value with size 16 to match size of target (10)
@@ -852,23 +902,23 @@ Warning (10235): Verilog HDL Always Construct warning at multiplex.v(37): variab
 Warning (10235): Verilog HDL Always Construct warning at multiplex.v(40): variable "g" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10270): Verilog HDL Case Statement warning at multiplex.v(11): incomplete case statement has no default case item
 Info (10264): Verilog HDL Case Statement information at multiplex.v(11): all case item expressions in this case statement are onehot
-Warning (10240): Verilog HDL Always Construct warning at multiplex.v(9): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "out[0]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[1]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[2]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[3]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[4]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[5]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[6]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[7]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[8]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[9]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[10]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[11]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[12]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[13]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[14]" at multiplex.v(9)
-Info (10041): Inferred latch for "out[15]" at multiplex.v(9)
+Warning (10240): Verilog HDL Always Construct warning at multiplex.v(9): inferring latch(es) for variable "MUXOut", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "MUXOut[0]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[1]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[2]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[3]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[4]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[5]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[6]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[7]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[8]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[9]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[10]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[11]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[12]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[13]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[14]" at multiplex.v(9)
+Info (10041): Inferred latch for "MUXOut[15]" at multiplex.v(9)
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "ifetch:ifetch|romlpm:addrs|altsyncram:altsyncram_component|altsyncram_9271:auto_generated|q_a[0]"
@@ -895,6 +945,7 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "ramlpm:memory|altsyncram:altsyncram_component|altsyncram_l4a1:auto_generated|q_a[13]"
         Warning (14320): Synthesized away node "ramlpm:memory|altsyncram:altsyncram_component|altsyncram_l4a1:auto_generated|q_a[14]"
         Warning (14320): Synthesized away node "ramlpm:memory|altsyncram:altsyncram_component|altsyncram_l4a1:auto_generated|q_a[15]"
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (17049): 184 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -906,10 +957,10 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
 Info (21057): Implemented 4 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 68 warnings
-    Info: Peak virtual memory: 4613 megabytes
-    Info: Processing ended: Thu Jul 22 14:04:12 2021
-    Info: Elapsed time: 00:00:01
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 78 warnings
+    Info: Peak virtual memory: 4614 megabytes
+    Info: Processing ended: Thu Jul 22 16:55:08 2021
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
