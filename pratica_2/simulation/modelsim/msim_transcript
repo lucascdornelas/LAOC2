@@ -1,0 +1,199 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do pratica_2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dec3to8
+# 
+# Top level modules:
+# 	dec3to8
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/ifetch.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ifetch
+# 
+# Top level modules:
+# 	ifetch
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module proc
+# 
+# Top level modules:
+# 	proc
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica_2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pratica_2
+# 
+# Top level modules:
+# 	pratica_2
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tlb
+# 
+# Top level modules:
+# 	tlb
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module upcount
+# 
+# Top level modules:
+# 	upcount
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module romlpm
+# 
+# Top level modules:
+# 	romlpm
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ramlpm
+# 
+# Top level modules:
+# 	ramlpm
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regn
+# 
+# Top level modules:
+# 	regn
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/lpmcounter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lpmcounter
+# 
+# Top level modules:
+# 	lpmcounter
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiplex
+# 
+# Top level modules:
+# 	multiplex
+# 
+vsim +altera -Lf lpm_ver -Lf altera_mf_ver -do pratica_2_run_msim_rtl_verilog.do -l msim_transcript -gui work.pratica_2
+# vsim +altera -Lf lpm_ver -Lf altera_mf_ver -do pratica_2_run_msim_rtl_verilog.do -l msim_transcript -gui work.pratica_2 
+# Loading work.pratica_2
+# Loading work.ifetch
+# Loading work.romlpm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.tlb
+# Loading work.ramlpm
+# Loading work.proc
+# Loading work.dec3to8
+# Loading work.upcount
+# Loading work.regn
+# Loading work.lpmcounter
+# Loading lpm_ver.lpm_counter
+# Loading work.alu
+# Loading work.multiplex
+# do pratica_2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dec3to8
+# 
+# Top level modules:
+# 	dec3to8
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/ifetch.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ifetch
+# 
+# Top level modules:
+# 	ifetch
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module proc
+# 
+# Top level modules:
+# 	proc
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica_2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pratica_2
+# 
+# Top level modules:
+# 	pratica_2
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tlb
+# 
+# Top level modules:
+# 	tlb
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module upcount
+# 
+# Top level modules:
+# 	upcount
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module romlpm
+# 
+# Top level modules:
+# 	romlpm
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ramlpm
+# 
+# Top level modules:
+# 	ramlpm
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regn
+# 
+# Top level modules:
+# 	regn
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/lpmcounter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lpmcounter
+# 
+# Top level modules:
+# 	lpmcounter
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiplex
+# 
+# Top level modules:
+# 	multiplex
+# 
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/pratica_2/MClock
+wave create -driver freeze -pattern clock -initialvalue 0 -period 10ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/pratica_2/PClock
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/pratica_2/Resetn
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/pratica_2/Resetn
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/pratica_2/Run
+add wave -position end  sim:/pratica_2/DIN
+add wave -position end  sim:/pratica_2/BusWires
+add wave -position end  sim:/pratica_2/addrCount
+add wave -position end  sim:/pratica_2/Done
+add wave -position end  sim:/pratica_2/addrM
+add wave -position end  sim:/pratica_2/addr
+add wave -position end  sim:/pratica_2/dout
+add wave -position end  sim:/pratica_2/w
+add wave -position end  sim:/pratica_2/memOut
+run -all

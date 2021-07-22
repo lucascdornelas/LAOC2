@@ -1,0 +1,245 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lucas\Desktop\LAOC2\pratica_2\simulation\modelsim
+valu
+IC2AWn8D:C]FSW6?IO]W_:2
+VB><G37`oecGbQm2_jI^b`1
+Z1 dC:\Users\lucas\Desktop\LAOC2\pratica_2\simulation\modelsim
+w1626948437
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 -O0
+!i10b 1
+!s100 oVk5JPh`U9UDUgD8f3Bfi2
+!s85 0
+!s108 1626973573.325000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v|
+!s101 -O0
+vdec3to8
+I2[^Uj:G8nL5VdIgQ7kTJ:3
+V3MQ7SOW6nNK?k^ze_@^7O1
+R1
+w1626948759
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Go`jm;4G7XT<nLgRO]o9:1
+!s85 0
+!s108 1626973572.785000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v|
+!s101 -O0
+vifetch
+I8`5Y]Elfz`dR2Hk;lV;n>2
+VAGQ6O7iNEY3SM7CDXg2=B1
+R1
+w1626948805
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/ifetch.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/ifetch.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 lAmTTDL0UoG<oMD:mS_fh3
+!s85 0
+!s108 1626973572.847000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/ifetch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/ifetch.v|
+!s101 -O0
+vlpmcounter
+IgZLOcj`]6i<eZ3VTgK9C72
+VDMS3PZUang^6PTne_H=Ic0
+R1
+w1626973449
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/lpmcounter.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/lpmcounter.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 NJ>[CkV6HfcB76UGCn6V_0
+!s85 0
+!s108 1626973573.274000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/lpmcounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/lpmcounter.v|
+!s101 -O0
+vmultiplex
+!i10b 1
+!s100 b0IHE=5ARTm>WQ7dhN0;81
+I_1dj:ORDnC=9fbG?@3MlP1
+V3_o5LRdH9KYP]2Xh8;CJD1
+R1
+w1626948652
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1626973573.377000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v|
+!s101 -O0
+R3
+R4
+vpratica_2
+IA`1d?10BgF>0<V`HY5K[52
+V@Iecfej`gY>7n[I>0SCb[3
+R1
+w1626950476
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica_2.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/pratica_2.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 QDSC^PIUJ2DFaE;L934PL2
+!s85 0
+!s108 1626973572.947000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica_2.v|
+!s101 -O0
+vproc
+I9m:WWR3ne2aDI^dEkklCY3
+VCPHn[nGLmiYSQkN0V[E>L3
+R1
+w1626973405
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 4n_d6NbTX0Y9kOi97RRW72
+!s85 0
+!s108 1626973572.897000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v|
+!s101 -O0
+vramlpm
+ITiEH0Q?`C]WIWK73TmT:H3
+V4c3l96noMjK]bFM7]IbUL0
+R1
+w1626973097
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 KW8S:Ykok<?2]OOXFMVR=1
+!s85 0
+!s108 1626973573.170000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v|
+!s101 -O0
+vregn
+IFKAC6P64UNUoeWWmN?MQa0
+V>4I0:3RkDA`dV9OI9564:0
+R1
+w1626718532
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 1^WRkdzi4P]Tn9I=C^:4b1
+!s85 0
+!s108 1626973573.224000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v|
+!s101 -O0
+vromlpm
+I<eKX6lfYe>mF4ki[nkDMP1
+V=7@TDo>IB??^`i4c3VfUN1
+R1
+w1626950893
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 8g]F4kA[^8XPzX86Z3FAQ1
+!s85 0
+!s108 1626973573.109000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v|
+!s101 -O0
+vtlb
+ILAkK4Ee5S>cWZf>cQ`6L[2
+V7Xh81]m62TZ:NP5MIR]X63
+R1
+w1626972853
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 5=2eH3YDEbKY]UZ<2ko7o1
+!s85 0
+!s108 1626973572.998000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v|
+!s101 -O0
+vupcount
+IONK1z3jM;H;`[DWQ7k7C43
+V6F[W^nTWj`kicHA9eP>;d3
+R1
+w1626973140
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 F3`MXYWA5I?XEQ^nOBn]W0
+!s85 0
+!s108 1626973573.056000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v|
+!s101 -O0
