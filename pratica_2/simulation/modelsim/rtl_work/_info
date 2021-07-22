@@ -2,244 +2,268 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\lucas\Desktop\LAOC2\pratica_2\simulation\modelsim
-valu
-IC2AWn8D:C]FSW6?IO]W_:2
-VB><G37`oecGbQm2_jI^b`1
-Z1 dC:\Users\lucas\Desktop\LAOC2\pratica_2\simulation\modelsim
-w1626948437
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v
-L0 1
-Z2 OV;L;10.1d;51
+Z0 dC:\Users\lucas\Desktop\Pratica-II-LAOC-II-main\Pratica2\simulation\modelsim
+vcounterlpm
+IJIEa2_W@mFT?CmFiZAclX3
+VRddMQMnGFliH^_3DOLEFE0
+Z1 dC:\Users\lucas\Desktop\Pratica-II-LAOC-II-main\Pratica2\simulation\modelsim
+Z2 w1626989121
+8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/counterlpm.v
+FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/counterlpm.v
+L0 39
+Z3 OV;L;10.1d;51
 r1
 31
-Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 -O0
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 -O0
 !i10b 1
-!s100 oVk5JPh`U9UDUgD8f3Bfi2
+!s100 ?76I[01`ZCPLllIahjLP:1
 !s85 0
-!s108 1626973573.325000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v|
+!s108 1626991187.428000
+!s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/counterlpm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/counterlpm.v|
 !s101 -O0
 vdec3to8
-I2[^Uj:G8nL5VdIgQ7kTJ:3
+IQcfdB8nFLJc`S>njGg0[d2
 V3MQ7SOW6nNK?k^ze_@^7O1
 R1
-w1626948759
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v
+R2
+8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/dec3to8.v
+FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/dec3to8.v
 L0 1
-R2
+R3
 r1
 31
-R3
 R4
+R5
 !i10b 1
-!s100 Go`jm;4G7XT<nLgRO]o9:1
+!s100 BWPzWZ3Idnna4TWbWGd1F3
 !s85 0
-!s108 1626973572.785000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v|
+!s108 1626991187.488000
+!s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/dec3to8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/dec3to8.v|
 !s101 -O0
-vifetch
-I8`5Y]Elfz`dR2Hk;lV;n>2
-VAGQ6O7iNEY3SM7CDXg2=B1
+vinstructionFetch
+IDQe7[6m<_A7i:7H_I@1oj2
+VcEolJ8eDzVZPgjKm5oe[a3
 R1
-w1626948805
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/ifetch.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/ifetch.v
+R2
+8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/instructionFetch.v
+FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/instructionFetch.v
 L0 1
-R2
+R3
 r1
 31
-R3
 R4
+R5
+ninstruction@fetch
 !i10b 1
-!s100 lAmTTDL0UoG<oMD:mS_fh3
+!s100 X0_cCmBkCZXP2I_T2VaBb3
 !s85 0
-!s108 1626973572.847000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/ifetch.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/ifetch.v|
+!s108 1626991187.564000
+!s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/instructionFetch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/instructionFetch.v|
 !s101 -O0
-vlpmcounter
-IgZLOcj`]6i<eZ3VTgK9C72
-VDMS3PZUang^6PTne_H=Ic0
+vMUX
+!i10b 1
+!s100 Wh21_Y1a8god>Jk>UK;Nh2
+IAFHZ>;9WmNVY6C`<bWSG03
+V24W``o>F_jESGN@1jfFe[2
 R1
-w1626973449
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/lpmcounter.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/lpmcounter.v
-L0 39
 R2
-r1
-31
-R3
-R4
-!i10b 1
-!s100 NJ>[CkV6HfcB76UGCn6V_0
-!s85 0
-!s108 1626973573.274000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/lpmcounter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/lpmcounter.v|
-!s101 -O0
-vmultiplex
-!i10b 1
-!s100 b0IHE=5ARTm>WQ7dhN0;81
-I_1dj:ORDnC=9fbG?@3MlP1
-V3_o5LRdH9KYP]2Xh8;CJD1
-R1
-w1626948652
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v
+8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/MUX.v
+FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/MUX.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-!s108 1626973573.377000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v|
+!s108 1626991187.677000
+!s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/MUX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/MUX.v|
 !s101 -O0
-R3
 R4
-vpratica_2
-IA`1d?10BgF>0<V`HY5K[52
-V@Iecfej`gY>7n[I>0SCb[3
+R5
+n@m@u@x
+vpratica2
+IXTNd2bL<L2_in`H`NfE^d2
+V8Ca;DczILa:PG[iW@Ya0n3
 R1
-w1626950476
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica_2.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/pratica_2.v
-L0 1
 R2
+8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/pratica2.v
+FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/pratica2.v
+L0 1
+R3
 r1
 31
-R3
 R4
+R5
 !i10b 1
-!s100 QDSC^PIUJ2DFaE;L934PL2
+!s100 25M[iQf6a:?dkd6n?FMhc1
 !s85 0
-!s108 1626973572.947000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica_2.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica_2.v|
+!s108 1626991187.049000
+!s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/pratica2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/pratica2.v|
 !s101 -O0
 vproc
-I9m:WWR3ne2aDI^dEkklCY3
-VCPHn[nGLmiYSQkN0V[E>L3
+IOmP?kgzzNb`S7XaO4=2HP1
+V^N9K7kEjjDanmGP=blZMb3
 R1
-w1626973405
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v
-L0 1
 R2
+8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/proc.v
+FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/proc.v
+L0 1
+R3
 r1
 31
-R3
 R4
+R5
 !i10b 1
-!s100 4n_d6NbTX0Y9kOi97RRW72
+!s100 fahk43QOKNl]f546XJPIW2
 !s85 0
-!s108 1626973572.897000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v|
+!s108 1626991187.120000
+!s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/proc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/proc.v|
 !s101 -O0
 vramlpm
-ITiEH0Q?`C]WIWK73TmT:H3
+IOHgcED0:UP06mjLckZ>ST1
 V4c3l96noMjK]bFM7]IbUL0
 R1
-w1626973097
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v
-L0 39
 R2
+8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/ramlpm.v
+FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/ramlpm.v
+L0 39
+R3
 r1
 31
-R3
 R4
+R5
 !i10b 1
-!s100 KW8S:Ykok<?2]OOXFMVR=1
+!s100 fDR89R01NDM7hPZl>aUa:3
 !s85 0
-!s108 1626973573.170000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v|
+!s108 1626991187.309000
+!s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/ramlpm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/ramlpm.v|
 !s101 -O0
 vregn
-IFKAC6P64UNUoeWWmN?MQa0
+IlOLG02P]0GziZhPE59[`R3
 V>4I0:3RkDA`dV9OI9564:0
 R1
-w1626718532
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v
-L0 1
 R2
+8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/regn.v
+FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/regn.v
+L0 1
+R3
 r1
 31
-R3
 R4
+R5
 !i10b 1
-!s100 1^WRkdzi4P]Tn9I=C^:4b1
+!s100 UA5:fSQ[ZFXd0c0[9C1[o2
 !s85 0
-!s108 1626973573.224000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v|
+!s108 1626991187.249000
+!s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/regn.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/regn.v|
 !s101 -O0
 vromlpm
-I<eKX6lfYe>mF4ki[nkDMP1
+I@XQ]`Y2O13=U3O<cRdGM;2
 V=7@TDo>IB??^`i4c3VfUN1
 R1
-w1626950893
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v
+R2
+8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/romlpm.v
+FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/romlpm.v
 L0 39
-R2
+R3
 r1
 31
-R3
 R4
+R5
 !i10b 1
-!s100 8g]F4kA[^8XPzX86Z3FAQ1
+!s100 KL;9akGKI7:EQNKWmC4kA0
 !s85 0
-!s108 1626973573.109000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v|
+!s108 1626991187.367000
+!s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/romlpm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/romlpm.v|
 !s101 -O0
-vtlb
-ILAkK4Ee5S>cWZf>cQ`6L[2
-V7Xh81]m62TZ:NP5MIR]X63
+vTLB
+IKTg1[iUYGHVV5OdkgN[We3
+VUD^K8?6Y535[:@91mL^n]1
 R1
-w1626972853
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v
-L0 1
 R2
+8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/tlb.v
+FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/tlb.v
+L0 1
+R3
 r1
 31
-R3
 R4
+n@t@l@b
+R5
 !i10b 1
-!s100 5=2eH3YDEbKY]UZ<2ko7o1
+!s100 :E6@oX8JN@A7S:9fk_nIA1
 !s85 0
-!s108 1626973572.998000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v|
+!s108 1626991186.988000
+!s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/tlb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/tlb.v|
+!s101 -O0
+vULA
+IFzlz^?mW>7i[=N;MXDTXX1
+V@QL<Q7QVd;X`ZkkS8X]S<0
+R1
+R2
+8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/ULA.v
+FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/ULA.v
+L0 1
+R3
+r1
+31
+R4
+R5
+n@u@l@a
+!i10b 1
+!s100 5S@JXS77UL`2@YD?VnXhC3
+!s85 0
+!s108 1626991187.617000
+!s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/ULA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/ULA.v|
 !s101 -O0
 vupcount
-IONK1z3jM;H;`[DWQ7k7C43
+IBbk<YP84TPYDbSJXa9KKd2
 V6F[W^nTWj`kicHA9eP>;d3
 R1
-w1626973140
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v
-L0 1
 R2
+Z6 8C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/upcount.v
+Z7 FC:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/upcount.v
+L0 1
+R3
 r1
 31
-R3
+Z8 !s108 1626991187.179000
+Z9 !s107 C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/upcount.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2|C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/upcount.v|
 R4
+R5
 !i10b 1
-!s100 F3`MXYWA5I?XEQ^nOBn]W0
+!s100 JiWX2KGcQFCGU<`lDjD>E3
 !s85 0
-!s108 1626973573.056000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v|
+!s101 -O0
+vupcount_5
+I`8Zk^8f`6[cI<Cl;A]RCS1
+V]RRi2?b:g6_G^HS;CDk420
+R1
+R2
+R6
+R7
+L0 17
+R3
+r1
+31
+R8
+R9
+R10
+R4
+R5
+!i10b 1
+!s100 1WWFV`jGKWS:O^IRLlc7h3
+!s85 0
 !s101 -O0

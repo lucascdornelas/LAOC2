@@ -9,7 +9,7 @@ entity proc is
         Run             : in     vl_logic;
         Done            : out    vl_logic;
         BusWires        : out    vl_logic_vector(15 downto 0);
-        pc              : out    vl_logic_vector(5 downto 0);
+        R7              : out    vl_logic_vector(5 downto 0);
         addrM           : out    vl_logic_vector(15 downto 0);
         doutM           : out    vl_logic_vector(15 downto 0);
         wM              : out    vl_logic

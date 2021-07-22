@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="pratica_2">
-		<CBX_INST_ENTRY INSTANCE_NAME="|pratica_2|ifetch:ifetch|romlpm:addrs|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_9271.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|pratica_2|proc:proc|lpmcounter:count|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_ubk.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|pratica_2|ramlpm:memory|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_l4a1.tdf"/>
-	</PROJECT>
-</LOG_ROOT>
