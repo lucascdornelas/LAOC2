@@ -1,14 +1,12 @@
-module proc (DIN, mem, Resetn, Clock, Run, Done, BusWires, R7, addrM, doutM, wM);
-	input [15:0] DIN; 
-	input [15:0] mem;
-	input Resetn, Clock, Run;
-	
-	output reg Done;
-	output [15:0] BusWires;
-	output [5:0] R7;
-	
-	output [15:0] addrM, doutM;
-	output wM;
+module proc (
+	input [15:0] DIN, MemoryIn, 
+	input Resetn, Clock, Run, 
+	output reg Done, 
+	output [15:0] BusWires, 
+	output [5:0] PC, 
+	output [15:0] addrM, doutM, 
+	output enableMemory
+	);
 	
 	// registradores
 	wire [0:7] Xreg, Yreg;
@@ -29,15 +27,25 @@ module proc (DIN, mem, Resetn, Clock, Run, Done, BusWires, R7, addrM, doutM, wM)
 	
 	wire Clear = Done | Resetn;	
 	
-	// [15:12] = Instruction 
-	// [11:9] = Xreg 
-	// [8:6] = Yreg 
-	// [5:0] = Offset
-	
 	assign I = IR[9:6];
-	// extensão de sinal
+
+	// extensor de sinal
 	dec3to8 decX (IR[5:3], 1'b1, Xreg);
-	dec3to8 decY (IR[2:0], 1'b1, Yreg);	
+	dec3to8 decY (IR[2:0], 1'b1, Yreg);
+
+	// paramentros
+	parameter mv   = 4'b0000;
+	parameter st   = 4'b0001;
+	parameter mvnz = 4'b0010;
+	parameter ld   = 4'b0011;
+	parameter mvi  = 4'b0100;
+
+	parameter add  = 4'b0101;
+	parameter sub  = 4'b0110;
+	parameter orr  = 4'b0111;
+	parameter slt  = 4'b1000;
+	parameter sll  = 4'b1001;
+	parameter srl  = 4'b1010;
 	
 	upcount tstep (Clear, Clock, TstepQ);
 
@@ -64,23 +72,23 @@ module proc (DIN, mem, Resetn, Clock, Run, Done, BusWires, R7, addrM, doutM, wM)
 					begin
 						regOut = 8'b00000001;
 						irIn = 1'b1;
-						incr_pc = 1; 	// pula para proxima instrucao ou imediato
+						incr_pc = 1; 
 					end	
 					
 				2'b01: //define signals in time step 1
 					case (I)				
-						4'b0000: begin					// mv 
+						mv: begin
 							regOut = Yreg;
 							regIn = Xreg;
 							Done = 1'b1;							
 						end
 						
-						4'b0001: begin					// st 					
+						st: begin					
 							regOut = Xreg;
 							doutIn = 1;							
 						end
 						
-						4'b0010: begin 				// mvnz
+						mvnz: begin 
 							if (G != 0) begin
 								  regOut = Yreg;
 								  regIn = Xreg;
@@ -88,69 +96,69 @@ module proc (DIN, mem, Resetn, Clock, Run, Done, BusWires, R7, addrM, doutM, wM)
 								Done = 1;
 							end
 						
-						4'b0011: begin					//load					
+						ld: begin				
 							regOut = Yreg;
 							addrIn = 1;	
 						end
 						
-						4'b0100: begin					//mvi					
+						mvi: begin			
 							
 						end
 						
 						
-						4'b0101: begin	 				//add						
+						add: begin					
 							regOut = Xreg;
 							aIn = 1;
 						end
 						
-						4'b0110: begin					// sub					
+						sub: begin				
 							regOut = Xreg;
 							aIn = 1;	
 						end
 						 
-						4'b0111: begin					//or				
+						orr: begin			
 							regOut = Xreg;
 							aIn = 1;		
 						end
 						
-						4'b1000: begin 				//slt
+						slt: begin 
 							regOut = Xreg;
 							aIn = 1;
 						end
 						
-						4'b1001: begin 				//sll
+						sll: begin 
 							regOut = Xreg;
 							aIn = 1;
 						end
 						
-						4'b1010: begin 				//srl
+						srl: begin 	
 							regOut = Xreg;
 							aIn = 1;
 						end
 					endcase			
 					
 				2'b10: //define signals in time step 2
-				 if(I > 4'b0100) begin			  // ula op's
+				 if(I > mvi) begin
 					gIn = 1'b1;
 					regOut = Yreg;
 					case (I)				
-							4'b0101:    aluSignal = 3'b000;
-                     4'b0110:    aluSignal = 3'b001;
-                     4'b0111:    aluSignal = 3'b010;
-                     4'b1000: 	aluSignal = 3'b011;
-                     4'b1001: 	aluSignal = 3'b100;
-                     4'b1010: 	aluSignal = 3'b101;
+						add:    aluSignal = 3'b000;
+						sub:    aluSignal = 3'b001;
+						orr:    aluSignal = 3'b010;
+						slt: 	aluSignal = 3'b011;
+						sll: 	aluSignal = 3'b100;
+						srl: 	aluSignal = 3'b101;
 							
 					endcase
 					end
 					else begin 
-						if(I == 4'b0001) begin		//st
+						if(I == st) begin	
 							regOut = Yreg;
 							addrIn = 1;
 							wIn = 1;
 						end
 												
-						if(I == 4'b0100) begin		//mvi
+						if(I == mvi) begin
 							regIn = Xreg;
 							dinOut = 1'b1;
 							Done = 1'b1;
@@ -160,13 +168,13 @@ module proc (DIN, mem, Resetn, Clock, Run, Done, BusWires, R7, addrM, doutM, wM)
 					end
 					
 				2'b11: //define signals in time step 3
-					if(I > 4'b0100) begin			// ula op's
+					if(I > mvi) begin
 						gOut = 1'b1;
 						regIn = Xreg;
 						Done = 1'b1;
 					end
 					else begin
-						if(I == 4'b0011) begin		// ld
+						if(I == ld) begin
 							regIn = Xreg;
 							memOut = 1;
 							Done = 1'b1;
@@ -176,8 +184,6 @@ module proc (DIN, mem, Resetn, Clock, Run, Done, BusWires, R7, addrM, doutM, wM)
 		end
 	end
 		
-	//... instantiate other registers
-	
 	regn reg_0 (BusWires, regIn[0], Clock, R0, Resetn);
 	regn reg_1 (BusWires, regIn[1], Clock, R1, Resetn);
 	regn reg_2 (BusWires, regIn[2], Clock, R2, Resetn);
@@ -186,27 +192,21 @@ module proc (DIN, mem, Resetn, Clock, Run, Done, BusWires, R7, addrM, doutM, wM)
 	regn reg_5 (BusWires, regIn[5], Clock, R5, Resetn);
 	regn reg_6 (BusWires, regIn[6], Clock, R6, Resetn);
 	
-	counterlpm reg_7 (1'b1, Clock, incr_pc, BusWires[5:0], Resetn, regIn[7], R7);		// é um counter
+	counterlpm reg_7 (1'b1, Clock, incr_pc, BusWires[5:0], Resetn, regIn[7], PC);
 	
 	regn reg_A(BusWires, aIn, Clock, A, Resetn);
 	regn reg_G(aluOut, gIn, Clock, G, Resetn);
 	
-	regn reg_IR(DIN[15:6], irIn, Clock, IR, Resetn);	
-	defparam reg_IR.n = 10; // n = 10 
+	regn_IR reg_IR(DIN[15:6], irIn, Clock, IR, Resetn);	 
 	
-	ULA ula(aluSignal, A, BusWires, aluOut);
+	alu alu(aluSignal, A, BusWires, aluOut);
 	
 	
 	// Memory register
 	regn reg_Addr(BusWires, addrIn, Clock, addrM, Resetn);
 	regn reg_Dout(BusWires, doutIn, Clock, doutM, Resetn);		
-	regn reg_W(wIn, 1'b1, Clock, wM, Resetn);	
+	regn reg_W(wIn, 1'b1, Clock, enableMemory, Resetn);	
 	defparam reg_W.n = 1;	//  n = 1
 						
-	//... define the bus
-	MUX mux (DIN, R0, R1, R2, R3, R4, R5, R6, R7, G, mem, {dinOut, regOut, gOut, memOut}, BusWires);
-	
-	
-	
-
+	multiplex mux(DIN, R0, R1, R2, R3, R4, R5, R6, PC, G, MemoryIn, {dinOut, regOut, gOut, memOut}, BusWires);
 endmodule

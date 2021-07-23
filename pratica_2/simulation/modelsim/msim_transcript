@@ -10,25 +10,25 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/tlb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module TLB
 # 
 # Top level modules:
 # 	TLB
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/pratica2.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica2.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module pratica2
 # 
 # Top level modules:
 # 	pratica2
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/proc.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module proc
 # 
 # Top level modules:
 # 	proc
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/upcount.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module upcount
 # -- Compiling module upcount_5
@@ -36,52 +36,217 @@
 # Top level modules:
 # 	upcount
 # 	upcount_5
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/regn.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module regn
 # 
 # Top level modules:
 # 	regn
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/ramlpm.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiplex
+# 
+# Top level modules:
+# 	multiplex
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ramlpm
 # 
 # Top level modules:
 # 	ramlpm
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/romlpm.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module romlpm
 # 
 # Top level modules:
 # 	romlpm
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/counterlpm.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/counterlpm.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module counterlpm
 # 
 # Top level modules:
 # 	counterlpm
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/dec3to8.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module dec3to8
 # 
 # Top level modules:
 # 	dec3to8
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/instructionFetch.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/instructionFetch.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module instructionFetch
 # 
 # Top level modules:
 # 	instructionFetch
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/ULA.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/regn_IR.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ULA
+# -- Compiling module regn_IR
 # 
 # Top level modules:
-# 	ULA
-# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2 {C:/Users/lucas/Desktop/Pratica-II-LAOC-II-main/Pratica2/MUX.v}
+# 	regn_IR
+# 
+vsim +altera -do pratica2_run_msim_rtl_verilog.do -l msim_transcript -gui work.pratica2
+# vsim +altera -do pratica2_run_msim_rtl_verilog.do -l msim_transcript -gui work.pratica2 
+# Loading work.pratica2
+# Loading work.instructionFetch
+# Loading work.romlpm
+# ** Error: (vsim-3033) C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v(81): Instantiation of 'altsyncram' failed. The design unit was not found.
+# 
+#         Region: /pratica2/iF/address
+#         Searched libraries:
+#             C:/Users/lucas/Desktop/LAOC2/pratica_2/simulation/modelsim/rtl_work
+# Loading work.TLB
+# Loading work.ramlpm
+# ** Error: (vsim-3033) C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v(85): Instantiation of 'altsyncram' failed. The design unit was not found.
+# 
+#         Region: /pratica2/memory
+#         Searched libraries:
+#             C:/Users/lucas/Desktop/LAOC2/pratica_2/simulation/modelsim/rtl_work
+# Loading work.proc
+# Loading work.dec3to8
+# Loading work.upcount
+# Loading work.regn
+# Loading work.counterlpm
+# ** Error: (vsim-3033) C:/Users/lucas/Desktop/LAOC2/pratica_2/counterlpm.v(74): Instantiation of 'lpm_counter' failed. The design unit was not found.
+# 
+#         Region: /pratica2/processor/reg_7
+#         Searched libraries:
+#             C:/Users/lucas/Desktop/LAOC2/pratica_2/simulation/modelsim/rtl_work
+# Loading work.regn_IR
+# Loading work.alu
+# Loading work.multiplex
+# Error loading design
+vsim +altera -L altera_mf_ver -L lpm_ver -do pratica2_run_msim_rtl_verilog.do -l msim_transcript -gui work.pratica2
+# vsim +altera -L altera_mf_ver -L lpm_ver -do pratica2_run_msim_rtl_verilog.do -l msim_transcript -gui work.pratica2 
+# Loading work.pratica2
+# Loading work.instructionFetch
+# Loading work.romlpm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.TLB
+# Loading work.ramlpm
+# Loading work.proc
+# Loading work.dec3to8
+# Loading work.upcount
+# Loading work.regn
+# Loading work.counterlpm
+# Loading lpm_ver.lpm_counter
+# Loading work.regn_IR
+# Loading work.alu
+# Loading work.multiplex
+# do pratica2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module MUX
+# -- Compiling module TLB
 # 
 # Top level modules:
-# 	MUX
+# 	TLB
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pratica2
 # 
+# Top level modules:
+# 	pratica2
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module proc
+# 
+# Top level modules:
+# 	proc
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module upcount
+# -- Compiling module upcount_5
+# 
+# Top level modules:
+# 	upcount
+# 	upcount_5
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regn
+# 
+# Top level modules:
+# 	regn
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiplex
+# 
+# Top level modules:
+# 	multiplex
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ramlpm
+# 
+# Top level modules:
+# 	ramlpm
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module romlpm
+# 
+# Top level modules:
+# 	romlpm
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/counterlpm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counterlpm
+# 
+# Top level modules:
+# 	counterlpm
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dec3to8
+# 
+# Top level modules:
+# 	dec3to8
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/instructionFetch.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instructionFetch
+# 
+# Top level modules:
+# 	instructionFetch
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/regn_IR.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regn_IR
+# 
+# Top level modules:
+# 	regn_IR
+# 
+do C:/Users/lucas/Desktop/LAOC2/pratica_2/simulation/modelsim/wave.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: erick  Hostname: DESKTOP-J65UKP5  ProcessID: 9588
+# 
+#           Attempting to use alternate WLF file "./wlftcri1zh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftcri1zh
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+add wave -position 4 -format Logic -height 17 -editable 2 Edit:/pratica2/Resetn
+add wave -position 5 -format Logic -height 17 -editable 2 Edit:/pratica2/Run
+add wave -position 6 -format Logic -height 17 -editable 2 Edit:/pratica2/MemoryClock
+add wave -position 7 -format Logic -height 17 -editable 2 Edit:/pratica2/ProcClock
+# Load canceled
+run -all
+# ** Warning: (vsim-PLI-3412) Memory address read on line 129 of file "memoryMif.ver" is out of bounds specified for readmem command.  (Current address [64], address range [0:63])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
+#    Time: 0 ps  Iteration: 0  Instance: /pratica2/memory/altsyncram_component

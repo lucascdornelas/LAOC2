@@ -1,20 +1,20 @@
-module pratica2 (MClock, PClock, Resetn, Run);
-	input MClock, PClock, Resetn, Run;
-	
+module pratica2 (
+	input MemoryClock, ProcClock, Resetn, Run
+);
 	wire [15:0] DIN, BusWires;
 	wire [5:0] addrCount;
-	wire Resetn, Run, Done;
+	wire Done;
 	
 	wire [5:0] addrM;
 	wire [15:0] addr, dout;
 	wire w;
-	wire [15:0] memOut;
+	wire [15:0] MemoryOut;
 	
 	assign addrM = addr[4:0];
 	
-	instructionFetch iF(addrCount, MClock, DIN);
-	ramlpm memory (addrM, MClock, dout, w, memOut);
-	proc processor(DIN, memOut, Resetn, PClock, Run, Done, BusWires, addrCount, addr, dout, w);
+	instFetch iF(addrCount, MemoryClock, DIN);
+	ramlpm memory (addrM, MemoryClock, dout, w, MemoryOut);
+	proc processor(DIN, MemoryOut, Resetn, ProcClock, Run, Done, BusWires, addrCount, addr, dout, w);
 	
 	
 endmodule

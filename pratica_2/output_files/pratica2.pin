@@ -93,7 +93,7 @@ GND                          : B2        : gnd    :                   :         
 TCK                          : B3        : input  :                   :         : 9         :                
 GND                          : B4        : gnd    :                   :         :           :                
 ~ALTERA_ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B5        : input  : 2.5 V             :         : 9         : N              
-MClock                       : B6        : input  : 2.5 V             :         : 8         : N              
+MemoryClock                  : B6        : input  : 2.5 V             :         : 8         : N              
 GND                          : B7        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B8        :        :                   :         : 7         :                
 GND                          : B9        : gnd    :                   :         :           :                
@@ -125,7 +125,7 @@ GND                          : D8        : gnd    :                   :         
 VCCA                         : D9        : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 6         :                
-PClock                       : D12       : input  : 2.5 V             :         : 6         : N              
+ProcClock                    : D12       : input  : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D13       :        :                   :         : 7         :                
 GXB_GND*                     : E1        :        :                   :         : QL0       :                
 GXB_GND*                     : E2        :        :                   :         : QL0       :                
