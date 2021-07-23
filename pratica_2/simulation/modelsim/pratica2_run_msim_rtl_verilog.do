@@ -16,6 +16,6 @@ vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:
 vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v}
 vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/counterlpm.v}
 vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v}
-vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/instructionFetch.v}
 vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/regn_IR.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 {C:/Users/lucas/Desktop/LAOC2/pratica_2/instFetch.v}
 

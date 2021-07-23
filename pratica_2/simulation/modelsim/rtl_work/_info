@@ -19,7 +19,7 @@ Z4 !s92 -vlog01compat -work work +incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2 
 !i10b 1
 !s100 DQ;M0lg[G^SOaP01H^IKQ2
 !s85 0
-!s108 1627003307.558000
+!s108 1627057656.449000
 !s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/alu.v|
 !s101 -O0
@@ -39,7 +39,7 @@ R4
 !i10b 1
 !s100 [LC?Y:TaQ[G;BaVI79h1P1
 !s85 0
-!s108 1627003307.859000
+!s108 1627057656.626000
 !s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/counterlpm.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/counterlpm.v|
 !s101 -O0
@@ -59,31 +59,31 @@ R4
 !i10b 1
 !s100 Go`jm;4G7XT<nLgRO]o9:1
 !s85 0
-!s108 1627003307.912000
+!s108 1627057656.686000
 !s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/dec3to8.v|
 !s101 -O0
-vinstructionFetch
-IYgR5`AgX>GVo9c]ZL38n73
-VcEolJ8eDzVZPgjKm5oe[a3
+vinstFetch
+!i10b 1
+!s100 ITo=jz73Af=df[SG]O`6N3
+I_HEU6M9A@L>OejXmdB@O03
+VUFOob45A0d1?DO]@41HSZ1
 R1
-R5
-8C:/Users/lucas/Desktop/LAOC2/pratica_2/instructionFetch.v
-FC:/Users/lucas/Desktop/LAOC2/pratica_2/instructionFetch.v
+w1627005457
+8C:/Users/lucas/Desktop/LAOC2/pratica_2/instFetch.v
+FC:/Users/lucas/Desktop/LAOC2/pratica_2/instFetch.v
 L0 1
 R2
 r1
+!s85 0
 31
+!s108 1627057656.798000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/instFetch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/instFetch.v|
+!s101 -O0
 R3
 R4
-ninstruction@fetch
-!i10b 1
-!s100 5gKO28R2VQCnf8oW^]fVC0
-!s85 0
-!s108 1627003307.969000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/instructionFetch.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/instructionFetch.v|
-!s101 -O0
+ninst@fetch
 vmultiplex
 IGZ4LPERgJP;S<=EjmnC?j1
 Vdm1WUB5GE>0jW>JJbR9C_1
@@ -100,15 +100,15 @@ R4
 !i10b 1
 !s100 KGeH:EJaI6_zYDDeJDFWR0
 !s85 0
-!s108 1627003307.494000
+!s108 1627057656.330000
 !s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/multiplex.v|
 !s101 -O0
 vpratica2
-I0ohA;Rzi4O=@eH;_VR51U1
+IEbmKDRzcL;8O=HldYdbnB3
 VT<34E3<RaXfSoGTJnaS7X0
 R1
-w1626993222
+w1627005474
 8C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica2.v
 FC:/Users/lucas/Desktop/LAOC2/pratica_2/pratica2.v
 L0 1
@@ -118,9 +118,9 @@ r1
 R3
 R4
 !i10b 1
-!s100 Q`X1>L@QH?1DCbHbfTz^l2
+!s100 UND;oF_gdZN30zIDHB7<42
 !s85 0
-!s108 1627003307.262000
+!s108 1627057650.460000
 !s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica2.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/pratica2.v|
 !s101 -O0
@@ -140,7 +140,7 @@ R4
 !i10b 1
 !s100 ;5I0R7<^93h6WMmG>ac2_0
 !s85 0
-!s108 1627003307.315000
+!s108 1627057650.564000
 !s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/proc.v|
 !s101 -O0
@@ -160,7 +160,7 @@ R4
 !i10b 1
 !s100 X3O65BczzHn<YJeB[=46K3
 !s85 0
-!s108 1627003307.674000
+!s108 1627057656.507000
 !s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/ramlpm.v|
 !s101 -O0
@@ -180,13 +180,11 @@ R4
 !i10b 1
 !s100 lP`hBEJ@jORDDVHn3M9_j1
 !s85 0
-!s108 1627003307.438000
+!s108 1627057652.647000
 !s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/regn.v|
 !s101 -O0
 vregn_IR
-!i10b 1
-!s100 LJWDiCz`PlOegc=`@_QFT1
 IIM8ho@=H=IERiI:b>:^FU3
 Vih:2]4meYA2BhzKold8W<2
 R1
@@ -196,15 +194,17 @@ FC:/Users/lucas/Desktop/LAOC2/pratica_2/regn_IR.v
 L0 1
 R2
 r1
-!s85 0
 31
-!s108 1627003308.025000
-!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/regn_IR.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/regn_IR.v|
-!s101 -O0
 R3
 R4
 nregn_@i@r
+!i10b 1
+!s100 LJWDiCz`PlOegc=`@_QFT1
+!s85 0
+!s108 1627057656.742000
+!s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/regn_IR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/regn_IR.v|
+!s101 -O0
 vromlpm
 I9]Y2E0zK<fcWfBh1:jgPG0
 V=7@TDo>IB??^`i4c3VfUN1
@@ -221,15 +221,15 @@ R4
 !i10b 1
 !s100 >zf>_9Q6?:?i262dS_@9@2
 !s85 0
-!s108 1627003307.791000
+!s108 1627057656.566000
 !s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/romlpm.v|
 !s101 -O0
-vTLB
-I_l<ijlg`bJ[G6<A9@lc@<2
-V:N<5dTnE`B9;z<XiOa<O^2
+vtlb
+IHKiE>02GllPgE3fBgNMb02
+V8nd<5LG_9eo``z=_:P;2=0
 R1
-w1627003138
+w1627057611
 8C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v
 FC:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v
 L0 1
@@ -237,12 +237,11 @@ R2
 r1
 31
 R3
-n@t@l@b
 R4
 !i10b 1
-!s100 6hVmZ8@7QiPG[g;CcP_o^2
+!s100 Q]b=_@XCK<;eG1iYjM;2c0
 !s85 0
-!s108 1627003307.200000
+!s108 1627057650.224000
 !s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/tlb.v|
 !s101 -O0
@@ -257,7 +256,7 @@ L0 1
 R2
 r1
 31
-Z8 !s108 1627003307.373000
+Z8 !s108 1627057650.638000
 Z9 !s107 C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v|
 Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Desktop/LAOC2/pratica_2|C:/Users/lucas/Desktop/LAOC2/pratica_2/upcount.v|
 R3

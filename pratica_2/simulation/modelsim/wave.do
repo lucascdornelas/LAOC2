@@ -14,8 +14,10 @@ add wave -noupdate -radix decimal /pratica2/processor/R6
 add wave -noupdate -radix decimal /pratica2/processor/PC
 add wave -noupdate -radix decimal /pratica2/processor/A
 add wave -noupdate -radix decimal /pratica2/processor/G
+add wave -noupdate /pratica2/processor/I
+add wave -noupdate /pratica2/processor/IR
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+WaveRestoreCursors {{Cursor 1} {5398 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -31,7 +33,7 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ps} {1 ns}
+WaveRestoreZoom {550 ps} {1550 ps}
 view wave 
 wave clipboard store
 wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 100000ps sim:/pratica2/Resetn 
