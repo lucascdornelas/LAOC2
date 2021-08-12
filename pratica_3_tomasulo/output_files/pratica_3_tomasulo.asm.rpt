@@ -1,5 +1,5 @@
 Assembler report for pratica_3_tomasulo
-Wed Aug 11 22:14:41 2021
+Thu Aug 12 15:31:57 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Aug 11 22:14:41 2021 ;
+; Assembler Status      ; Successful - Thu Aug 12 15:31:57 2021 ;
 ; Revision Name         ; pratica_3_tomasulo                    ;
 ; Top-level Entity Name ; pratica_3_tomasulo                    ;
 ; Family                ; Cyclone II                            ;
@@ -117,13 +117,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Aug 11 22:14:39 2021
+    Info: Processing started: Thu Aug 12 15:31:55 2021
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off pratica_3_tomasulo -c pratica_3_tomasulo
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4555 megabytes
-    Info: Processing ended: Wed Aug 11 22:14:41 2021
+    Info: Processing ended: Thu Aug 12 15:31:57 2021
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

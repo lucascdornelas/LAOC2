@@ -1,0 +1,150 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lucas\Documents\GitHub\LAOC2\pratica_3_tomasulo\simulation\modelsim
+vCDB
+IWz0bAPQB^Bi4RifbHB6;F1
+V5G1VJUK0;9Lk91zXK4VkY3
+Z1 dC:\Users\lucas\Documents\GitHub\LAOC2\pratica_3_tomasulo\simulation\modelsim
+w1628730526
+8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v
+FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 -O0
+n@c@d@b
+!i10b 1
+!s100 ODg6kTET6d7>QUY@9CJ102
+!s85 0
+!s108 1628793214.892000
+!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v|
+!s101 -O0
+vFPregisters
+I_5ZPPXojCSelJ=cTE5Z<d2
+VTGlNgRbb;_WTJ<h?o4CmX0
+R1
+w1628730515
+8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v
+FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@f@pregisters
+!i10b 1
+!s100 ea8z;YHo^2oH9bL9eH8m:0
+!s85 0
+!s108 1628793214.745000
+!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v|
+!s101 -O0
+vIQ
+I;h9KWS>B_?dQ28gET4A_30
+Vc7X<[i_4=e[8l2EnC>VOD1
+R1
+Z5 w1628728051
+8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v
+FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@i@q
+!i10b 1
+!s100 1=GAW4bL@AacKZHnUKSGj1
+!s85 0
+!s108 1628793214.691000
+!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v|
+!s101 -O0
+vmux
+IhnMPb^4hKdaIX5=<1N9;>0
+VacQ_Z9IFUTYaS`;IkEo`92
+R1
+R5
+8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v
+FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 3;VDFPk1ae12Q^zJ3UC6S3
+!s85 0
+!s108 1628793214.629000
+!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v|
+!s101 -O0
+vpratica_3_tomasulo
+!i10b 1
+!s100 BY=z:3`IVoje_O0Z`nnTD0
+IC8A=Fz=G`jND0?8JCQWT[3
+V>^;3;6dCU4OSj=mlN793P1
+R1
+w1628730867
+8C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v
+FC:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1628793215.098000
+!s107 C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo|C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo -O0
+vRSadders
+I2S3hP_DbO0zB;^[>51XQe2
+V]<2VGAn`1FAWi^D3<Ylio2
+R1
+R5
+8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v
+FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@r@sadders
+!i10b 1
+!s100 n?zd?Gz7]^Mo_C_Bl:BCP3
+!s85 0
+!s108 1628793214.398000
+!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v|
+!s101 -O0
+vUnidadeFuncional
+IkGz9Ma?ZR>3G:QWO6P@Ri1
+VafMTV`NEK@JflXdZnKV]F2
+R1
+R5
+8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v
+FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v
+L0 1
+R2
+r1
+31
+R3
+n@unidade@funcional
+R4
+!i10b 1
+!s100 VGfQ`h?jjICm4;Oi7b9E`2
+!s85 0
+!s108 1628793214.345000
+!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v|
+!s101 -O0

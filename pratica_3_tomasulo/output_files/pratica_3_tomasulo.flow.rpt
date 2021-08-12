@@ -1,5 +1,5 @@
 Flow report for pratica_3_tomasulo
-Wed Aug 11 22:14:44 2021
+Thu Aug 12 15:32:00 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Aug 11 22:14:44 2021           ;
+; Flow Status                        ; Successful - Thu Aug 12 15:32:00 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pratica_3_tomasulo                              ;
 ; Top-level Entity Name              ; pratica_3_tomasulo                              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/11/2021 22:14:31 ;
+; Start date & time ; 08/12/2021 15:31:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pratica_3_tomasulo  ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 102037076958502.162873087114956 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 102037076958502.162879310617468 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -92,8 +92,8 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4582 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 4871 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4583 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 4875 MB             ; 00:00:04                           ;
 ; Assembler                 ; 00:00:02     ; 1.0                     ; 4555 MB             ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4536 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4507 MB             ; 00:00:00                           ;

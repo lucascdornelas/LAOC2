@@ -1,0 +1,190 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do pratica_3_tomasulo_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UnidadeFuncional
+# 
+# Top level modules:
+# 	UnidadeFuncional
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RSadders
+# 
+# Top level modules:
+# 	RSadders
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IQ
+# 
+# Top level modules:
+# 	IQ
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPregisters
+# 
+# Top level modules:
+# 	FPregisters
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CDB
+# 
+# Top level modules:
+# 	CDB
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pratica_3_tomasulo
+# 
+# Top level modules:
+# 	pratica_3_tomasulo
+# 
+do C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/simulation/modelsim/wave.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Error: (vish-4014) No objects found matching 'NewSig:sim:/pratica_3_tomasulo/clock'.
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+# Error in macro C:\Users\lucas\Documents\GitHub\LAOC2\pratica_3_tomasulo\simulation\modelsim\wave.do line 3
+# (vish-4014) No objects found matching 'NewSig:sim:/pratica_3_tomasulo/clock'.
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+#     while executing
+# "wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 100000ps sim:/pratica_3_tomasulo/clock..."
+do C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/simulation/modelsim/pratica_3_tomasulo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UnidadeFuncional
+# 
+# Top level modules:
+# 	UnidadeFuncional
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RSadders
+# 
+# Top level modules:
+# 	RSadders
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IQ
+# 
+# Top level modules:
+# 	IQ
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPregisters
+# 
+# Top level modules:
+# 	FPregisters
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CDB
+# 
+# Top level modules:
+# 	CDB
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pratica_3_tomasulo
+# 
+# Top level modules:
+# 	pratica_3_tomasulo
+# 
+vsim work.pratica_3_tomasulo
+# vsim work.pratica_3_tomasulo 
+# Loading work.pratica_3_tomasulo
+# Loading work.CDB
+# Loading work.mux
+# Loading work.FPregisters
+# Loading work.IQ
+# Loading work.RSadders
+# Loading work.UnidadeFuncional
+do C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/simulation/modelsim/pratica_3_tomasulo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UnidadeFuncional
+# 
+# Top level modules:
+# 	UnidadeFuncional
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RSadders
+# 
+# Top level modules:
+# 	RSadders
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IQ
+# 
+# Top level modules:
+# 	IQ
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPregisters
+# 
+# Top level modules:
+# 	FPregisters
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CDB
+# 
+# Top level modules:
+# 	CDB
+# vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pratica_3_tomasulo
+# 
+# Top level modules:
+# 	pratica_3_tomasulo
+# 
+do C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/simulation/modelsim/wave.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 0
+add wave -position end  sim:/pratica_3_tomasulo/cdb/R1
+add wave -position end  sim:/pratica_3_tomasulo/cdb/R2
+add wave -position end  sim:/pratica_3_tomasulo/cdb/R3
+add wave -position end  sim:/pratica_3_tomasulo/cdb/R4
+add wave -position end  sim:/pratica_3_tomasulo/cdb/R5
+add wave -position end  sim:/pratica_3_tomasulo/cdb/R6
+add wave -position end  sim:/pratica_3_tomasulo/cdb/R7
+add wave -position end  sim:/pratica_3_tomasulo/cdb/nextInstruction
+run -all
+wave editwrite -file C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/simulation/modelsim/wave.do
