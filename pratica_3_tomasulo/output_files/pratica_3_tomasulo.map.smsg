@@ -1,1 +1,3 @@
-Warning (10268): Verilog HDL information at UnidadeFuncional.v(20): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at Reservation_Station.v(4): object "Reg1" differs only in case from object "reg1" in the same scope
+Info (10281): Verilog HDL Declaration information at Reservation_Station.v(4): object "Reg2" differs only in case from object "reg2" in the same scope
+Warning (10268): Verilog HDL information at Functional_Unit.v(20): always construct contains both blocking and non-blocking assignments

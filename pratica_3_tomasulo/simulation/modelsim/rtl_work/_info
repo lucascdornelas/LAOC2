@@ -4,33 +4,33 @@ K3
 cModel Technology
 Z0 dC:\Users\lucas\Documents\GitHub\LAOC2\pratica_3_tomasulo\simulation\modelsim
 vCDB
-IWz0bAPQB^Bi4RifbHB6;F1
-V5G1VJUK0;9Lk91zXK4VkY3
+Ik<@iPo6L2zOn10`f_4L9T3
+VMhbn?[za=@P4zAlg<7k?d3
 Z1 dC:\Users\lucas\Documents\GitHub\LAOC2\pratica_3_tomasulo\simulation\modelsim
-w1628730526
-8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v
-FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v
-L0 1
+w1628886678
+8C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/CDB.v
+FC:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/CDB.v
+L0 9
 Z2 OV;L;10.1d;51
 r1
 31
 Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo -O0
 n@c@d@b
 !i10b 1
-!s100 ODg6kTET6d7>QUY@9CJ102
+!s100 KOkbCcBFaGf=lCY4>mQRG3
 !s85 0
-!s108 1628793214.892000
-!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v|
+!s108 1628888309.634000
+!s107 C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/CDB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo|C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/CDB.v|
 !s101 -O0
 vFPregisters
-I_5ZPPXojCSelJ=cTE5Z<d2
-VTGlNgRbb;_WTJ<h?o4CmX0
+I6meG7OZ>1F_4VR8?RN9K92
+V^3KSP1:T[RNezzYelPnno3
 R1
-w1628730515
-8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v
-FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v
+w1628882979
+8C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/FPregisters.v
+FC:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/FPregisters.v
 L0 1
 R2
 r1
@@ -39,19 +39,40 @@ R3
 R4
 n@f@pregisters
 !i10b 1
-!s100 ea8z;YHo^2oH9bL9eH8m:0
+!s100 _JmALQ2DlV^DTP>cIUd`92
 !s85 0
-!s108 1628793214.745000
-!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v|
+!s108 1628888309.690000
+!s107 C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/FPregisters.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo|C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/FPregisters.v|
+!s101 -O0
+vFunctional_Unit
+ICdFU_9kkMAInjjN5g@DQK2
+V5V21UlcXF[2@:9IE8jY?h3
+R1
+w1628888281
+8C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Functional_Unit.v
+FC:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Functional_Unit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@functional_@unit
+!i10b 1
+!s100 204HAoC2TV40=F[h3YfzF0
+!s85 0
+!s108 1628888309.864000
+!s107 C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Functional_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo|C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Functional_Unit.v|
 !s101 -O0
 vIQ
-I;h9KWS>B_?dQ28gET4A_30
-Vc7X<[i_4=e[8l2EnC>VOD1
+IC0QQ^Pf7JS]9f]IN?n[dd1
+V`S2>G5Dc<]KXM4l^QFhil0
 R1
-Z5 w1628728051
-8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v
-FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v
+w1628885907
+8C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/IQ.v
+FC:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/IQ.v
 L0 1
 R2
 r1
@@ -60,91 +81,71 @@ R3
 R4
 n@i@q
 !i10b 1
-!s100 1=GAW4bL@AacKZHnUKSGj1
+!s100 NHz1A?k`4fS_OBVZo<A6F3
 !s85 0
-!s108 1628793214.691000
-!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v|
+!s108 1628888309.748000
+!s107 C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/IQ.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo|C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/IQ.v|
 !s101 -O0
-vmux
-IhnMPb^4hKdaIX5=<1N9;>0
-VacQ_Z9IFUTYaS`;IkEo`92
+vpratica_3_tomasulo
+I4QWdbhBRzfWPFJSz_6X1k3
+ViC<U`CI4oDiK421?ndazo2
 R1
-R5
-8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v
-FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v
-L0 1
+w1628880270
+8C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v
+FC:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v
+L0 2
 R2
 r1
 31
 R3
 R4
 !i10b 1
-!s100 3;VDFPk1ae12Q^zJ3UC6S3
+!s100 klgUYdV2VmfQQNK1LfF?C2
 !s85 0
-!s108 1628793214.629000
-!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v|
-!s101 -O0
-vpratica_3_tomasulo
-!i10b 1
-!s100 BY=z:3`IVoje_O0Z`nnTD0
-IC8A=Fz=G`jND0?8JCQWT[3
-V>^;3;6dCU4OSj=mlN793P1
-R1
-w1628730867
-8C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v
-FC:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v
-L0 1
-R2
-r1
-!s85 0
-31
-!s108 1628793215.098000
+!s108 1628888309.576000
 !s107 C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo|C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v|
 !s101 -O0
-R3
-!s92 -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo -O0
-vRSadders
-I2S3hP_DbO0zB;^[>51XQe2
-V]<2VGAn`1FAWi^D3<Ylio2
+vReservation_Station
+Ig``DI:dzN<2j_XGT2f:T50
+V<9I761aW65IOTzQ?8@cgF2
 R1
-R5
-8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v
-FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v
+w1628888242
+8C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Reservation_Station.v
+FC:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Reservation_Station.v
 L0 1
 R2
 r1
 31
 R3
 R4
-n@r@sadders
+n@reservation_@station
 !i10b 1
-!s100 n?zd?Gz7]^Mo_C_Bl:BCP3
+!s100 07j3?S[:3o:GH_J8k@X2J3
 !s85 0
-!s108 1628793214.398000
-!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v|
+!s108 1628888309.805000
+!s107 C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Reservation_Station.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo|C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Reservation_Station.v|
 !s101 -O0
-vUnidadeFuncional
-IkGz9Ma?ZR>3G:QWO6P@Ri1
-VafMTV`NEK@JflXdZnKV]F2
+vTM_MUX
+!i10b 1
+!s100 oAWSOY2ThiOdDzG?UIM580
+IA=nKMn:[0J=C3T;UAbOVn1
+V2KcC[MF@cQRXGL4oag7Ff0
 R1
-R5
-8C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v
-FC:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v
+w1628882401
+8C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/TM_MUX.v
+FC:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/TM_MUX.v
 L0 1
 R2
 r1
-31
-R3
-n@unidade@funcional
-R4
-!i10b 1
-!s100 VGfQ`h?jjICm4;Oi7b9E`2
 !s85 0
-!s108 1628793214.345000
-!s107 C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3|C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v|
+31
+!s108 1628888309.918000
+!s107 C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/TM_MUX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo|C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/TM_MUX.v|
 !s101 -O0
+R3
+R4
+n@t@m_@m@u@x

@@ -1,6 +1,6 @@
 library verilog;
 use verilog.vl_types.all;
-entity UnidadeFuncional is
+entity Functional_Unit is
     port(
         clock           : in     vl_logic;
         instruction     : in     vl_logic_vector(15 downto 0);
@@ -10,8 +10,8 @@ entity UnidadeFuncional is
         done            : out    vl_logic;
         currentInst     : out    vl_logic_vector(15 downto 0);
         dout            : out    vl_logic_vector(15 downto 0);
-        disponivelUF    : out    vl_logic;
-        reg1            : in     vl_logic_vector(15 downto 0);
-        reg2            : in     vl_logic_vector(15 downto 0)
+        avaliableUF     : out    vl_logic;
+        R1              : in     vl_logic_vector(15 downto 0);
+        R2              : in     vl_logic_vector(15 downto 0)
     );
-end UnidadeFuncional;
+end Functional_Unit;

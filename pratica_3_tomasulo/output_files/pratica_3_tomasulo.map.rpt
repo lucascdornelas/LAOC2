@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pratica_3_tomasulo
-Thu Aug 12 15:31:48 2021
+Fri Aug 13 17:58:08 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,7 +14,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "CDB:cdb|RSadders:RSa1"
+  9. Port Connectivity Checks: "CDB:cdb|Reservation_Station:rs"
  10. Elapsed Time Per Partition
  11. Analysis & Synthesis Messages
  12. Analysis & Synthesis Suppressed Messages
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Aug 12 15:31:48 2021           ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 13 17:58:08 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pratica_3_tomasulo                              ;
 ; Top-level Entity Name              ; pratica_3_tomasulo                              ;
@@ -52,7 +52,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 3                                               ;
+; Total pins                         ; 1                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -156,19 +156,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
-+----------------------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                         ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; ../../../QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v      ;         ;
-; ../../../QuartoPeriodo/LAOC2/pratica3/RSadders.v         ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v              ;         ;
-; ../../../QuartoPeriodo/LAOC2/pratica3/mux.v              ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v                   ;         ;
-; ../../../QuartoPeriodo/LAOC2/pratica3/IQ.v               ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v                    ;         ;
-; ../../../QuartoPeriodo/LAOC2/pratica3/FPregisters.v      ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v           ;         ;
-; ../../../QuartoPeriodo/LAOC2/pratica3/CDB.v              ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v                   ;         ;
-; pratica_3_tomasulo.v                                     ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v ;         ;
-+----------------------------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
+; pratica_3_tomasulo.v             ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v  ;         ;
+; CDB.v                            ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/CDB.v                 ;         ;
+; FPregisters.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/FPregisters.v         ;         ;
+; IQ.v                             ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/IQ.v                  ;         ;
+; Reservation_Station.v            ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Reservation_Station.v ;         ;
+; Functional_Unit.v                ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Functional_Unit.v     ;         ;
+; TM_MUX.v                         ; yes             ; User Verilog HDL File  ; C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/TM_MUX.v              ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -191,7 +191,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 3     ;
+; I/O pins                                    ; 1     ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 +---------------------------------------------+-------+
 
@@ -201,7 +201,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |pratica_3_tomasulo        ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |pratica_3_tomasulo ; work         ;
+; |pratica_3_tomasulo        ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |pratica_3_tomasulo ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -221,15 +221,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CDB:cdb|RSadders:RSa1"                                                                          ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port             ; Type   ; Severity ; Details                                                                             ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
-; instOutEnable    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; instOut          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; doneInst[15..13] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CDB:cdb|Reservation_Station:rs"                                                              ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; instOutEnable ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; instOut       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; dInst[15..13] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -247,82 +247,79 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Aug 12 15:31:46 2021
+    Info: Processing started: Fri Aug 13 17:58:06 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pratica_3_tomasulo -c pratica_3_tomasulo
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file /users/lucas/documents/quartoperiodo/laoc2/pratica3/unidadefuncional.v
-    Info (12023): Found entity 1: UnidadeFuncional
-Info (12021): Found 1 design units, including 1 entities, in source file /users/lucas/documents/quartoperiodo/laoc2/pratica3/rsstore.v
-    Info (12023): Found entity 1: RSstore
-Info (12021): Found 1 design units, including 1 entities, in source file /users/lucas/documents/quartoperiodo/laoc2/pratica3/rsload.v
-    Info (12023): Found entity 1: RSload
-Info (12021): Found 1 design units, including 1 entities, in source file /users/lucas/documents/quartoperiodo/laoc2/pratica3/rsadders.v
-    Info (12023): Found entity 1: RSadders
-Info (12021): Found 1 design units, including 1 entities, in source file /users/lucas/documents/quartoperiodo/laoc2/pratica3/regn.v
-    Info (12023): Found entity 1: regn
-Info (12021): Found 1 design units, including 1 entities, in source file /users/lucas/documents/quartoperiodo/laoc2/pratica3/pratica3.v
-    Info (12023): Found entity 1: pratica3
-Warning (12090): Entity "mux" obtained from "../../../QuartoPeriodo/LAOC2/pratica3/mux.v" instead of from Quartus II megafunction library
-Info (12021): Found 1 design units, including 1 entities, in source file /users/lucas/documents/quartoperiodo/laoc2/pratica3/mux.v
-    Info (12023): Found entity 1: mux
-Info (12021): Found 1 design units, including 1 entities, in source file /users/lucas/documents/quartoperiodo/laoc2/pratica3/iq.v
-    Info (12023): Found entity 1: IQ
-Info (12021): Found 1 design units, including 1 entities, in source file /users/lucas/documents/quartoperiodo/laoc2/pratica3/fpregisters.v
-    Info (12023): Found entity 1: FPregisters
-Info (12021): Found 1 design units, including 1 entities, in source file /users/lucas/documents/quartoperiodo/laoc2/pratica3/cdb.v
-    Info (12023): Found entity 1: CDB
 Info (12021): Found 1 design units, including 1 entities, in source file pratica_3_tomasulo.v
     Info (12023): Found entity 1: pratica_3_tomasulo
-Warning (10236): Verilog HDL Implicit Net warning at CDB.v(41): created implicit net for "instOutEnable"
+Info (12021): Found 1 design units, including 1 entities, in source file cdb.v
+    Info (12023): Found entity 1: CDB
+Warning (12019): Can't analyze file -- file mux.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file fpregisters.v
+    Info (12023): Found entity 1: FPregisters
+Info (12021): Found 1 design units, including 1 entities, in source file iq.v
+    Info (12023): Found entity 1: IQ
+Warning (12019): Can't analyze file -- file regn.v is missing
+Warning (12019): Can't analyze file -- file RSadders.v is missing
+Warning (12019): Can't analyze file -- file RSload.v is missing
+Warning (12019): Can't analyze file -- file RSstore.v is missing
+Warning (12019): Can't analyze file -- file UnidadeFuncional.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file reservation_station.v
+    Info (12023): Found entity 1: Reservation_Station
+Info (12021): Found 1 design units, including 1 entities, in source file functional_unit.v
+    Info (12023): Found entity 1: Functional_Unit
+Info (12021): Found 1 design units, including 1 entities, in source file tm_mux.v
+    Info (12023): Found entity 1: TM_MUX
+Warning (10236): Verilog HDL Implicit Net warning at CDB.v(37): created implicit net for "instOutEnable"
+Warning (10236): Verilog HDL Implicit Net warning at Reservation_Station.v(28): created implicit net for "avaliable"
 Info (12127): Elaborating entity "pratica_3_tomasulo" for the top level hierarchy
 Info (12128): Elaborating entity "CDB" for hierarchy "CDB:cdb"
-Info (12128): Elaborating entity "mux" for hierarchy "CDB:cdb|mux:CDBmux"
-Warning (10270): Verilog HDL Case Statement warning at mux.v(8): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at mux.v(8): inferring latch(es) for variable "Rout", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "Rout[0]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[1]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[2]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[3]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[4]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[5]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[6]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[7]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[8]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[9]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[10]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[11]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[12]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[13]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[14]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[15]" at mux.v(8)
+Info (12128): Elaborating entity "TM_MUX" for hierarchy "CDB:cdb|TM_MUX:mux_cdb"
+Warning (10270): Verilog HDL Case Statement warning at TM_MUX.v(4): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at TM_MUX.v(4): inferring latch(es) for variable "Rout", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "Rout[0]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[1]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[2]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[3]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[4]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[5]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[6]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[7]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[8]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[9]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[10]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[11]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[12]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[13]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[14]" at TM_MUX.v(4)
+Info (10041): Inferred latch for "Rout[15]" at TM_MUX.v(4)
 Info (12128): Elaborating entity "FPregisters" for hierarchy "CDB:cdb|FPregisters:fpreg"
-Info (12128): Elaborating entity "IQ" for hierarchy "CDB:cdb|IQ:queue"
-Warning (10230): Verilog HDL assignment warning at IQ.v(36): truncated value with size 32 to match size of target (16)
-Warning (10030): Net "PC1.data_a" at IQ.v(5) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "PC1.waddr_a" at IQ.v(5) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "PC1.we_a" at IQ.v(5) has no driver or initial value, using a default initial value '0'
-Info (12128): Elaborating entity "RSadders" for hierarchy "CDB:cdb|RSadders:RSa1"
-Warning (10230): Verilog HDL assignment warning at RSadders.v(83): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at RSadders.v(89): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at RSadders.v(103): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at RSadders.v(104): truncated value with size 32 to match size of target (3)
-Warning (10030): Net "Qj[0]" at RSadders.v(10) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "Qk[0]" at RSadders.v(11) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "OP[0]" at RSadders.v(12) has no driver or initial value, using a default initial value '0'
-Info (12128): Elaborating entity "UnidadeFuncional" for hierarchy "CDB:cdb|RSadders:RSa1|UnidadeFuncional:UF"
+Info (12128): Elaborating entity "IQ" for hierarchy "CDB:cdb|IQ:instructions_queue"
+Warning (10230): Verilog HDL assignment warning at IQ.v(38): truncated value with size 32 to match size of target (16)
+Warning (10030): Net "PC1.data_a" at IQ.v(8) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PC1.waddr_a" at IQ.v(8) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PC1.we_a" at IQ.v(8) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "Reservation_Station" for hierarchy "CDB:cdb|Reservation_Station:rs"
+Warning (10036): Verilog HDL or VHDL warning at Reservation_Station.v(28): object "avaliable" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at Reservation_Station.v(64): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at Reservation_Station.v(68): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at Reservation_Station.v(79): truncated value with size 32 to match size of target (3)
+Warning (10030): Net "OP[0]" at Reservation_Station.v(16) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "Qj[0]" at Reservation_Station.v(24) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "Qk[0]" at Reservation_Station.v(24) has no driver or initial value, using a default initial value '0'
+Warning (10034): Output port "disponivel" at Reservation_Station.v(9) has no driver
+Info (12128): Elaborating entity "Functional_Unit" for hierarchy "CDB:cdb|Reservation_Station:rs|Functional_Unit:UF"
 Info (144001): Generated suppressed messages file C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/output_files/pratica_3_tomasulo.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clock"
-    Warning (15610): No output dependent on input pin "Reset"
-    Warning (15610): No output dependent on input pin "Run"
-Info (21057): Implemented 3 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 20 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnings
     Info: Peak virtual memory: 4593 megabytes
-    Info: Processing ended: Thu Aug 12 15:31:48 2021
+    Info: Processing ended: Fri Aug 13 17:58:08 2021
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

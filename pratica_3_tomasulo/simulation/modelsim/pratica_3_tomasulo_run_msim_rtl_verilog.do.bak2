@@ -5,11 +5,11 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/UnidadeFuncional.v}
-vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/RSadders.v}
-vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/mux.v}
-vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/IQ.v}
-vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/FPregisters.v}
-vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3 {C:/Users/lucas/Documents/QuartoPeriodo/LAOC2/pratica3/CDB.v}
 vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/CDB.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/mux.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/FPregisters.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/IQ.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/RSadders.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/UnidadeFuncional.v}
 

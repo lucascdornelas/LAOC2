@@ -1,0 +1,15 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/pratica_3_tomasulo.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/CDB.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/FPregisters.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/IQ.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Reservation_Station.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/Functional_Unit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo {C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/TM_MUX.v}
+

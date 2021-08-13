@@ -1,5 +1,5 @@
 Fitter report for pratica_3_tomasulo
-Thu Aug 12 15:31:54 2021
+Fri Aug 13 17:58:13 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -53,7 +53,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Aug 12 15:31:54 2021           ;
+; Fitter Status                      ; Successful - Fri Aug 13 17:58:13 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pratica_3_tomasulo                              ;
 ; Top-level Entity Name              ; pratica_3_tomasulo                              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0 / 33,216 ( 0 % )                              ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                              ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 3 / 475 ( < 1 % )                               ;
+; Total pins                         ; 1 / 475 ( < 1 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
@@ -139,8 +139,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 7 ( 0.00 % )       ;
-;     -- Achieved     ; 0 / 7 ( 0.00 % )       ;
+;     -- Requested    ; 0 / 5 ( 0.00 % )       ;
+;     -- Achieved     ; 0 / 5 ( 0.00 % )       ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -163,7 +163,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 4       ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 2       ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -200,7 +200,7 @@ The pin-out file can be found in C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3
 ;                                             ;                     ;
 ; Total LABs:  partially or completely used   ; 0 / 2,076 ( 0 % )   ;
 ; Virtual pins                                ; 0                   ;
-; I/O pins                                    ; 3 / 475 ( < 1 % )   ;
+; I/O pins                                    ; 1 / 475 ( < 1 % )   ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )      ;
 ;                                             ;                     ;
 ; Global signals                              ; 0                   ;
@@ -248,7 +248,7 @@ The pin-out file can be found in C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3
 ; Total LABs:  partially or completely used   ; 0 / 2076 ( 0 % )  ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                   ;                                ;
 ; Virtual pins                                ; 0                 ; 0                              ;
-; I/O pins                                    ; 3                 ; 0                              ;
+; I/O pins                                    ; 1                 ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 70 ( 0 % )    ; 0 / 70 ( 0 % )                 ;
 ; Total memory bits                           ; 0                 ; 0                              ;
 ; Total RAM block bits                        ; 0                 ; 0                              ;
@@ -268,7 +268,7 @@ The pin-out file can be found in C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3
 ;     -- hard_block:auto_generated_inst       ; 0                 ; 0                              ;
 ;                                             ;                   ;                                ;
 ; Partition Interface                         ;                   ;                                ;
-;     -- Input Ports                          ; 3                 ; 0                              ;
+;     -- Input Ports                          ; 1                 ; 0                              ;
 ;     -- Output Ports                         ; 0                 ; 0                              ;
 ;     -- Bidir Ports                          ; 0                 ; 0                              ;
 ;                                             ;                   ;                                ;
@@ -293,8 +293,6 @@ The pin-out file can be found in C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; Reset ; D13   ; 3        ; 31           ; 36           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; Run   ; T7    ; 1        ; 0            ; 11           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; clock ; C13   ; 3        ; 31           ; 36           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
@@ -304,9 +302,9 @@ The pin-out file can be found in C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3
 +----------+----------------+---------------+--------------+
 ; I/O Bank ; Usage          ; VCCIO Voltage ; VREF Voltage ;
 +----------+----------------+---------------+--------------+
-; 1        ; 1 / 64 ( 2 % ) ; 3.3V          ; --           ;
+; 1        ; 0 / 64 ( 0 % ) ; 3.3V          ; --           ;
 ; 2        ; 2 / 59 ( 3 % ) ; 3.3V          ; --           ;
-; 3        ; 2 / 56 ( 4 % ) ; 3.3V          ; --           ;
+; 3        ; 1 / 56 ( 2 % ) ; 3.3V          ; --           ;
 ; 4        ; 0 / 58 ( 0 % ) ; 3.3V          ; --           ;
 ; 5        ; 0 / 65 ( 0 % ) ; 3.3V          ; --           ;
 ; 6        ; 1 / 59 ( 2 % ) ; 3.3V          ; --           ;
@@ -562,7 +560,7 @@ The pin-out file can be found in C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3
 ; D10      ; 449        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D11      ; 445        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; D12      ; 443        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D13      ; 432        ; 3        ; Reset                                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D13      ; 432        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; D14      ; 426        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D15      ; 417        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D16      ; 415        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -868,7 +866,7 @@ The pin-out file can be found in C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3
 ; T4       ; 83         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; T5       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T6       ; 93         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; T7       ; 92         ; 1        ; Run                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T7       ; 92         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T8       ; 111        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T9       ; 76         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T10      ; 75         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1038,7 +1036,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |pratica_3_tomasulo        ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 3    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pratica_3_tomasulo ; work         ;
+; |pratica_3_tomasulo        ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 1    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pratica_3_tomasulo ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1049,8 +1047,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name  ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
 +-------+----------+---------------+---------------+-----------------------+-----+
 ; clock ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; Reset ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; Run   ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 +-------+----------+---------------+---------------+-----------------------+-----+
 
 
@@ -1060,8 +1056,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
 ; clock               ;                   ;         ;
-; Reset               ;                   ;         ;
-; Run                 ;                   ;         ;
 +---------------------+-------------------+---------+
 
 
@@ -1125,10 +1119,8 @@ Info (169124): Fitter converted 3 user pins into dedicated programming pins
     Info (169125): Pin ~ASDO~ is reserved at location E3
     Info (169125): Pin ~nCSO~ is reserved at location D3
     Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
-Critical Warning (169085): No exact pin location assignment(s) for 3 pins of 3 total pins
+Critical Warning (169085): No exact pin location assignment(s) for 1 pins of 1 total pins
     Info (169086): Pin clock not assigned to an exact location on the device
-    Info (169086): Pin Reset not assigned to an exact location on the device
-    Info (169086): Pin Run not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'pratica_3_tomasulo.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1138,7 +1130,7 @@ Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 3 (unused VREF, 3.3V VCCIO, 3 input, 0 output, 0 bidirectional)
+    Info (176211): Number of I/O pins in group: 1 (unused VREF, 3.3V VCCIO, 1 input, 0 output, 0 bidirectional)
         Info (176212): I/O standards used: 3.3-V LVTTL.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
@@ -1150,7 +1142,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  58 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1163,17 +1155,17 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.00 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/lucas/Documents/GitHub/LAOC2/pratica_3_tomasulo/output_files/pratica_3_tomasulo.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4875 megabytes
-    Info: Processing ended: Thu Aug 12 15:31:54 2021
+    Info: Peak virtual memory: 4879 megabytes
+    Info: Processing ended: Fri Aug 13 17:58:13 2021
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:04
 

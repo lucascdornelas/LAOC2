@@ -1,5 +1,6 @@
-module pratica_3_tomasulo(clock, Reset, Run);
- input clock, Reset, Run;
- 
- CDB cdb (clock, Reset, Run);
+
+module pratica_3_tomasulo(
+	input clock
+);
+	CDB cdb (clock);
 endmodule

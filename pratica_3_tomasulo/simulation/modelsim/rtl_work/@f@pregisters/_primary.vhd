@@ -11,7 +11,6 @@ entity FPregisters is
         R3              : out    vl_logic_vector(15 downto 0);
         R4              : out    vl_logic_vector(15 downto 0);
         R5              : out    vl_logic_vector(15 downto 0);
-        R6              : out    vl_logic_vector(15 downto 0);
-        R7              : out    vl_logic_vector(15 downto 0)
+        R6              : out    vl_logic_vector(15 downto 0)
     );
 end FPregisters;
