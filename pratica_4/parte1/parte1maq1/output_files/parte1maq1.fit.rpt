@@ -1,5 +1,5 @@
 Fitter report for parte1maq1
-Wed Apr 14 11:25:15 2021
+Wed Sep 08 23:41:27 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -53,7 +53,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Apr 14 11:25:15 2021           ;
+; Fitter Status                      ; Successful - Wed Sep 08 23:41:27 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; parte1maq1                                      ;
 ; Top-level Entity Name              ; parte1maq1                                      ;
@@ -171,7 +171,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/parte1maq1/output_files/parte1maq1.pin.
+The pin-out file can be found in C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq1/output_files/parte1maq1.pin.
 
 
 +-------------------------------------------------------------------+
@@ -288,15 +288,15 @@ The pin-out file can be found in C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/
 +---------------------------------------------+------------------+--------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Input Pins                                                                                                                                                                                                                                                  ;
-+-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
-+-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; SW[0] ; R3    ; 4        ; 1            ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; SW[1] ; L1    ; 1        ; 0            ; 4            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; clock ; E6    ; 2        ; 1            ; 14           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-+-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                       ;
++------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
+; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
++------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
+; clock      ; E6    ; 2        ; 1            ; 14           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; counter[0] ; R3    ; 4        ; 1            ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; counter[1] ; L1    ; 1        ; 0            ; 4            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
++------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
 +----------------------------------------------------------+
@@ -476,7 +476,7 @@ The pin-out file can be found in C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/
 ; K14      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; K15      ; 104        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K16      ; 103        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; L1       ; 30         ; 1        ; SW[1]                                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L1       ; 30         ; 1        ; counter[1]                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; L2       ; 31         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L3       ; 37         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L4       ; 41         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -542,7 +542,7 @@ The pin-out file can be found in C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/
 ; P16      ; 90         ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; R1       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; R2       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; R3       ; 43         ; 4        ; SW[0]                                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R3       ; 43         ; 4        ; counter[0]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; R4       ; 48         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; R5       ; 50         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; R6       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -623,15 +623,15 @@ Note: User assignments will override these defaults. The user specified values a
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------+
-; Delay Chain Summary                                                            ;
-+-------+----------+---------------+---------------+-----------------------+-----+
-; Name  ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
-+-------+----------+---------------+---------------+-----------------------+-----+
-; SW[1] ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; SW[0] ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; clock ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-+-------+----------+---------------+---------------+-----------------------+-----+
++-------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                 ;
++------------+----------+---------------+---------------+-----------------------+-----+
+; Name       ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
++------------+----------+---------------+---------------+-----------------------+-----+
+; counter[1] ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; counter[0] ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
+; clock      ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
++------------+----------+---------------+---------------+-----------------------+-----+
 
 
 +---------------------------------------------------+
@@ -639,8 +639,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; SW[1]               ;                   ;         ;
-; SW[0]               ;                   ;         ;
+; counter[1]          ;                   ;         ;
+; counter[0]          ;                   ;         ;
 ; clock               ;                   ;         ;
 +---------------------+-------------------+---------+
 
@@ -705,8 +705,8 @@ Info (169124): Fitter converted 3 user pins into dedicated programming pins
     Info (169125): Pin ~nCSO~ is reserved at location F4
     Info (169125): Pin ~LVDS41p/nCEO~ is reserved at location N14
 Critical Warning (169085): No exact pin location assignment(s) for 3 pins of 3 total pins
-    Info (169086): Pin SW[1] not assigned to an exact location on the device
-    Info (169086): Pin SW[0] not assigned to an exact location on the device
+    Info (169086): Pin counter[1] not assigned to an exact location on the device
+    Info (169086): Pin counter[0] not assigned to an exact location on the device
     Info (169086): Pin clock not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'parte1maq1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
@@ -725,7 +725,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  43 pins available
         Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  38 pins available
         Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  41 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -738,24 +738,24 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/parte1maq1/output_files/parte1maq1.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq1/output_files/parte1maq1.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4798 megabytes
-    Info: Processing ended: Wed Apr 14 11:25:15 2021
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4789 megabytes
+    Info: Processing ended: Wed Sep 08 23:41:27 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/parte1maq1/output_files/parte1maq1.fit.smsg.
+The suppressed messages can be found in C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq1/output_files/parte1maq1.fit.smsg.
 
 

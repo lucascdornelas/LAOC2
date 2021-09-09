@@ -1,16 +1,20 @@
-module parte1maq2 ( clock, SW );
+module parte1maq2 (clock, counter);
   input clock;
-  input [1:0] SW;
+  input [1:0] counter;
 
   //Possíveis operações
-  localparam ReadMiss = 2'b00, Invalidate = 2'b01, WriteMiss = 2'b10;
+  parameter readMiss = 2'b00;
+  parameter invalidate = 2'b01;
+  parameter writeMiss = 2'b10;
   
   //Estados do Processador
-  localparam Invalid = 2'b00, Exclusive = 2'b01, Shared = 2'b10;
+  parameter invalid = 2'b00;
+  parameter exclusive = 2'b01;
+  parameter shared = 2'b10;
   
   //Ações do Processador
-  localparam Empty = 1'b0, Write_Back_Block = 1'b1;
-
+  parameter empty = 1'b0;
+  parameter writeBackBlock = 1'b1;
 
   reg [1:0] estado;
   reg action;
@@ -20,39 +24,38 @@ module parte1maq2 ( clock, SW );
 
   always @(posedge clock)
     case(estado)
-      Invalid:
+      invalid:
         begin
-          estado <= Invalid;
-          action <= Empty;
+          estado <= invalid;
+          action <= empty;
         end
 
-      Exclusive:
-        case(SW)
-          WriteMiss:
+      exclusive:
+        case(counter)
+          writeMiss:
             begin
-              estado <= Invalid;
-              action <= Write_Back_Block;
+              estado <= invalid;
+              action <= writeBackBlock;
             end
-          ReadMiss:
+          readMiss:
             begin
-              estado <= Shared;
-              action <= Write_Back_Block;
+              estado <= shared;
+              action <= writeBackBlock;
             end
         endcase
 
-      Shared:
-        case(SW)
-          WriteMiss, Invalidate:
+      shared:
+        case(counter)
+          writeMiss, invalidate:
             begin
-              estado <= Invalid;
-              action <= Empty;
+              estado <= invalid;
+              action <= empty;
             end
-          ReadMiss:
+          readMiss:
             begin
-              estado <= Shared;
-              action <= Empty;
+              estado <= shared;
+              action <= empty;
             end
         endcase
     endcase
-
 endmodule

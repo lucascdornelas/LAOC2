@@ -1,5 +1,5 @@
 Analysis & Synthesis report for parte1maq1
-Wed Apr 14 11:25:02 2021
+Wed Sep 08 23:41:24 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -17,8 +17,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   9. Registers Removed During Synthesis
  10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |parte1maq1
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,7 +45,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 14 11:25:01 2021           ;
+; Analysis & Synthesis Status        ; Successful - Wed Sep 08 23:41:24 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; parte1maq1                                      ;
 ; Top-level Entity Name              ; parte1maq1                                      ;
@@ -157,13 +158,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                               ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                           ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
-; parte1maq1.v                     ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/parte1maq1/parte1maq1.v ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; parte1maq1.v                     ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq1/parte1maq1.v ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -205,11 +206,11 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------------------+
 ; State Machine - |parte1maq1|estado                              ;
 +------------------+-----------+---------------+------------------+
-; Name             ; estado.00 ; estado.Shared ; estado.Exclusive ;
+; Name             ; estado.00 ; estado.shared ; estado.exclusive ;
 +------------------+-----------+---------------+------------------+
 ; estado.00        ; 0         ; 0             ; 0                ;
-; estado.Exclusive ; 1         ; 0             ; 1                ;
-; estado.Shared    ; 1         ; 1             ; 0                ;
+; estado.exclusive ; 1         ; 0             ; 1                ;
+; estado.shared    ; 1         ; 1             ; 0                ;
 +------------------+-----------+---------------+------------------+
 
 
@@ -219,8 +220,8 @@ Encoding Type:  One-Hot
 ; Register name                         ; Reason for Removal ;
 +---------------------------------------+--------------------+
 ; estado.00                             ; Lost fanout        ;
-; estado.Shared                         ; Lost fanout        ;
-; estado.Exclusive                      ; Lost fanout        ;
+; estado.shared                         ; Lost fanout        ;
+; estado.exclusive                      ; Lost fanout        ;
 ; Total Number of Removed Registers = 3 ;                    ;
 +---------------------------------------+--------------------+
 
@@ -230,7 +231,7 @@ Encoding Type:  One-Hot
 +---------------+--------------------+----------------------------------------+
 ; Register name ; Reason for Removal ; Registers Removed due to This Register ;
 +---------------+--------------------+----------------------------------------+
-; estado.Shared ; Lost Fanouts       ; estado.Exclusive                       ;
+; estado.shared ; Lost Fanouts       ; estado.exclusive                       ;
 +---------------+--------------------+----------------------------------------+
 
 
@@ -249,6 +250,29 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |parte1maq1 ;
++----------------------+-------+---------------------------------------------+
+; Parameter Name       ; Value ; Type                                        ;
++----------------------+-------+---------------------------------------------+
+; readMiss             ; 00    ; Unsigned Binary                             ;
+; readHit              ; 01    ; Unsigned Binary                             ;
+; writeMiss            ; 10    ; Unsigned Binary                             ;
+; writeHit             ; 11    ; Unsigned Binary                             ;
+; invalid              ; 00    ; Unsigned Binary                             ;
+; exclusive            ; 01    ; Unsigned Binary                             ;
+; shared               ; 10    ; Unsigned Binary                             ;
+; emptyMessage         ; 00    ; Unsigned Binary                             ;
+; placeReadMissOnBus   ; 01    ; Unsigned Binary                             ;
+; placeInvalidateOnBus ; 10    ; Unsigned Binary                             ;
+; placeWriteMissOnBus  ; 11    ; Unsigned Binary                             ;
+; emptyAction          ; 00    ; Unsigned Binary                             ;
+; writeBackBlock       ; 01    ; Unsigned Binary                             ;
+; writeBackCacheBlock  ; 10    ; Unsigned Binary                             ;
++----------------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -264,28 +288,28 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Apr 14 11:24:53 2021
+    Info: Processing started: Wed Sep 08 23:41:23 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off parte1maq1 -c parte1maq1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (12125): Using design file parte1maq1.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: parte1maq1
 Info (12127): Elaborating entity "parte1maq1" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at parte1maq1.v(20): object "mensagem" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at parte1maq1.v(20): object "action" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at parte1maq1.v(28): object "mensagem" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at parte1maq1.v(28): object "action" assigned a value but never read
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[1]"
-    Warning (15610): No output dependent on input pin "SW[0]"
+    Warning (15610): No output dependent on input pin "counter[1]"
+    Warning (15610): No output dependent on input pin "counter[0]"
     Warning (15610): No output dependent on input pin "clock"
 Info (21057): Implemented 3 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4603 megabytes
-    Info: Processing ended: Wed Apr 14 11:25:02 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4594 megabytes
+    Info: Processing ended: Wed Sep 08 23:41:24 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

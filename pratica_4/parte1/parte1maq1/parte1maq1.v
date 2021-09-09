@@ -1,94 +1,99 @@
-module parte1maq1( clock, SW);
+module parte1maq1(clock, counter);
   input clock;
-  input [1:0] SW;
+  input [1:0] counter;
 
-  //Possíveis Operações
-  localparam ReadMiss = 2'b00, ReadHit = 2'b01, WriteMiss = 2'b10, WriteHit = 2'b11;
+  // Possiveis Operação
+  parameter readMiss = 2'b00;
+  parameter readHit = 2'b01;
+  parameter writeMiss = 2'b10;
+  parameter writeHit = 2'b11;
 
-  //Estados do Processador
-  localparam Invalid = 2'b00, Exclusive = 2'b01, Shared = 2'b10;
+  // Estados do Processador
+  parameter invalid = 2'b00;
+  parameter exclusive = 2'b01;
+  parameter shared = 2'b10;
 
-  //Mensagens do Processador
-  localparam Empty_Message = 2'b00;
+  // Mensagens do Processador
+  parameter emptyMessage = 2'b00;
+  parameter placeReadMissOnBus = 2'b01;
+  parameter placeInvalidateOnBus = 2'b10; 
+  parameter placeWriteMissOnBus = 2'b11;
   
-  localparam Place_Read_Miss_On_Bus = 2'b01, Place_Invalidate_On_Bus = 2'b10, Place_Write_Miss_On_Bus = 2'b11;
-  
-  //Ações do Processador
-  localparam Empty_Action = 2'b00, Write_Back_Block = 2'b01, Write_Back_Cache_Block = 2'b10;
+  // Ações do Processador
+  parameter emptyAction = 2'b00;
+  parameter writeBackBlock = 2'b01;
+  parameter writeBackCacheBlock = 2'b10;
 
   reg [1:0] estado;
-  reg [1:0] mensagem, action;
+  reg [1:0] mensagem, acao;
 
   initial
     estado <= 0;
 
   always @(posedge clock)
     case(estado)
-      Invalid:
-        case(SW)
-          ReadMiss, ReadHit:
+      invalid:
+        case(counter)
+          readMiss, readHit:
             begin
-              estado <= Shared;
-              mensagem <= Place_Read_Miss_On_Bus;
-				  action <= Empty_Action;
+              estado <= shared;
+              mensagem <= placeReadMissOnBus;
+				  acao <= emptyAction;
             end
-          WriteMiss, WriteHit:
+          writeMiss, writeHit:
             begin
-              estado <= Exclusive;
-              mensagem <= Place_Write_Miss_On_Bus;
-				  action <= Empty_Action;
-            end
-        endcase
-
-      Exclusive:
-        case(SW)
-          WriteHit, ReadHit:
-            begin
-              estado <= Exclusive;
-              mensagem <= Empty_Message;
-				  action <= Empty_Action;
-            end
-          WriteMiss:
-            begin
-              estado <= Exclusive;
-              mensagem <= Place_Write_Miss_On_Bus;
-				  action <= Write_Back_Cache_Block;
-            end
-          ReadMiss:
-            begin
-              estado <= Shared;
-              mensagem <= Place_Read_Miss_On_Bus;
-				  action <= Write_Back_Block;
+              estado <= exclusive;
+              mensagem <= placeWriteMissOnBus;
+				  acao <= emptyAction;
             end
         endcase
-
-      Shared:
-        case(SW)
-          ReadHit:
+      exclusive:
+        case(counter)
+          writeHit, readHit:
             begin
-              estado <= Shared;
-              mensagem <= Empty_Message;
-				  action <= Empty_Action;
+              estado <= exclusive;
+              mensagem <= emptyMessage;
+				  acao <= emptyAction;
             end
-          ReadMiss:
+          writeMiss:
             begin
-              estado <= Shared;
-              mensagem <= Place_Read_Miss_On_Bus;
-				  action <= Empty_Action;
+              estado <= exclusive;
+              mensagem <= placeWriteMissOnBus;
+				  acao <= writeBackCacheBlock;
             end
-          WriteHit:
+          readMiss:
             begin
-              estado <= Exclusive;
-              mensagem <= Place_Invalidate_On_Bus;
-				  action <= Empty_Action;
+              estado <= shared;
+              mensagem <= placeReadMissOnBus;
+				  acao <= writeBackBlock;
             end
-          WriteMiss:
+        endcase
+      shared:
+        case(counter)
+          readHit:
             begin
-              estado <= Exclusive;
-              mensagem <= Place_Write_Miss_On_Bus;
-				  action <= Empty_Action;
+              estado <= shared;
+              mensagem <= emptyMessage;
+				  acao <= emptyAction;
+            end
+          readMiss:
+            begin
+              estado <= shared;
+              mensagem <= placeReadMissOnBus;
+				  acao <= emptyAction;
+            end
+          writeMiss:
+            begin
+              estado <= exclusive;
+              mensagem <= placeWriteMissOnBus;
+				  acao <= emptyAction;
+            end
+			writeHit:
+            begin
+              estado <= exclusive;
+              mensagem <= placeInvalidateOnBus;
+				  acao <= emptyAction;
             end
         endcase
     endcase
-
 endmodule

@@ -224,7 +224,7 @@ NC                           : K13       :        :                   :         
 VCCIO3                       : K14       : power  :                   : 3.3V    : 3         :                
 GND*                         : K15       :        :                   :         : 3         :                
 GND*                         : K16       :        :                   :         : 3         :                
-SW[1]                        : L1        : input  : 3.3-V LVTTL       :         : 1         : N              
+counter[1]                   : L1        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : L2        :        :                   :         : 1         :                
 GND*                         : L3        :        :                   :         : 1         :                
 GND*                         : L4        :        :                   :         : 1         :                
@@ -290,7 +290,7 @@ GND*                         : P15       :        :                   :         
 GND*                         : P16       :        :                   :         : 3         :                
 VCCIO1                       : R1        : power  :                   : 3.3V    : 1         :                
 GND                          : R2        : gnd    :                   :         :           :                
-SW[0]                        : R3        : input  : 3.3-V LVTTL       :         : 4         : N              
+counter[0]                   : R3        : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : R4        :        :                   :         : 4         :                
 GND*                         : R5        :        :                   :         : 4         :                
 NC                           : R6        :        :                   :         :           :                

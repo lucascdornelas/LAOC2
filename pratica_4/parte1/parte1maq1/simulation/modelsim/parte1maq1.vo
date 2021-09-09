@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "04/14/2021 11:25:25"
+// DATE "09/08/2021 23:41:31"
 
 // 
 // Device: Altera EP2C5F256C6 Package FBGA256
@@ -30,13 +30,13 @@
 
 module parte1maq1 (
 	clock,
-	SW);
+	counter);
 input 	clock;
-input 	[1:0] SW;
+input 	[1:0] counter;
 
 // Design Ports Information
-// SW[1]	=>  Location: PIN_L1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// SW[0]	=>  Location: PIN_R3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// counter[1]	=>  Location: PIN_L1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// counter[0]	=>  Location: PIN_R3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 // clock	=>  Location: PIN_E6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
@@ -58,7 +58,7 @@ initial $sdf_annotate("parte1maq1_v.sdo");
 
 
 // Location: PIN_L1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-cycloneii_io \SW[1]~I (
+cycloneii_io \counter[1]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.outclk(gnd),
@@ -76,25 +76,25 @@ cycloneii_io \SW[1]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(SW[1]));
+	.padio(counter[1]));
 // synopsys translate_off
-defparam \SW[1]~I .input_async_reset = "none";
-defparam \SW[1]~I .input_power_up = "low";
-defparam \SW[1]~I .input_register_mode = "none";
-defparam \SW[1]~I .input_sync_reset = "none";
-defparam \SW[1]~I .oe_async_reset = "none";
-defparam \SW[1]~I .oe_power_up = "low";
-defparam \SW[1]~I .oe_register_mode = "none";
-defparam \SW[1]~I .oe_sync_reset = "none";
-defparam \SW[1]~I .operation_mode = "input";
-defparam \SW[1]~I .output_async_reset = "none";
-defparam \SW[1]~I .output_power_up = "low";
-defparam \SW[1]~I .output_register_mode = "none";
-defparam \SW[1]~I .output_sync_reset = "none";
+defparam \counter[1]~I .input_async_reset = "none";
+defparam \counter[1]~I .input_power_up = "low";
+defparam \counter[1]~I .input_register_mode = "none";
+defparam \counter[1]~I .input_sync_reset = "none";
+defparam \counter[1]~I .oe_async_reset = "none";
+defparam \counter[1]~I .oe_power_up = "low";
+defparam \counter[1]~I .oe_register_mode = "none";
+defparam \counter[1]~I .oe_sync_reset = "none";
+defparam \counter[1]~I .operation_mode = "input";
+defparam \counter[1]~I .output_async_reset = "none";
+defparam \counter[1]~I .output_power_up = "low";
+defparam \counter[1]~I .output_register_mode = "none";
+defparam \counter[1]~I .output_sync_reset = "none";
 // synopsys translate_on
 
 // Location: PIN_R3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-cycloneii_io \SW[0]~I (
+cycloneii_io \counter[0]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.outclk(gnd),
@@ -112,21 +112,21 @@ cycloneii_io \SW[0]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(SW[0]));
+	.padio(counter[0]));
 // synopsys translate_off
-defparam \SW[0]~I .input_async_reset = "none";
-defparam \SW[0]~I .input_power_up = "low";
-defparam \SW[0]~I .input_register_mode = "none";
-defparam \SW[0]~I .input_sync_reset = "none";
-defparam \SW[0]~I .oe_async_reset = "none";
-defparam \SW[0]~I .oe_power_up = "low";
-defparam \SW[0]~I .oe_register_mode = "none";
-defparam \SW[0]~I .oe_sync_reset = "none";
-defparam \SW[0]~I .operation_mode = "input";
-defparam \SW[0]~I .output_async_reset = "none";
-defparam \SW[0]~I .output_power_up = "low";
-defparam \SW[0]~I .output_register_mode = "none";
-defparam \SW[0]~I .output_sync_reset = "none";
+defparam \counter[0]~I .input_async_reset = "none";
+defparam \counter[0]~I .input_power_up = "low";
+defparam \counter[0]~I .input_register_mode = "none";
+defparam \counter[0]~I .input_sync_reset = "none";
+defparam \counter[0]~I .oe_async_reset = "none";
+defparam \counter[0]~I .oe_power_up = "low";
+defparam \counter[0]~I .oe_register_mode = "none";
+defparam \counter[0]~I .oe_sync_reset = "none";
+defparam \counter[0]~I .operation_mode = "input";
+defparam \counter[0]~I .output_async_reset = "none";
+defparam \counter[0]~I .output_power_up = "low";
+defparam \counter[0]~I .output_register_mode = "none";
+defparam \counter[0]~I .output_sync_reset = "none";
 // synopsys translate_on
 
 // Location: PIN_E6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
