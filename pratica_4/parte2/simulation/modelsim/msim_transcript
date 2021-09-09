@@ -1,0 +1,96 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do parte2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mariz/Desktop/LAOC\ II/pratica4/parte2 {C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/parte2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module parte2
+# 
+# Top level modules:
+# 	parte2
+# vlog -vlog01compat -work work +incdir+C:/Users/mariz/Desktop/LAOC\ II/pratica4/parte2 {C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# vlog -vlog01compat -work work +incdir+C:/Users/mariz/Desktop/LAOC\ II/pratica4/parte2 {C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/cache.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cache
+# 
+# Top level modules:
+# 	cache
+# vlog -vlog01compat -work work +incdir+C:/Users/mariz/Desktop/LAOC\ II/pratica4/parte2 {C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# vlog -vlog01compat -work work +incdir+C:/Users/mariz/Desktop/LAOC\ II/pratica4/parte2 {C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/bus.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bus
+# 
+# Top level modules:
+# 	bus
+# 
+vsim +altera -do parte2_run_msim_rtl_verilog.do -l msim_transcript -gui work.parte2
+# vsim +altera -do parte2_run_msim_rtl_verilog.do -l msim_transcript -gui work.parte2 
+# Loading work.parte2
+# Loading work.counter
+# Loading work.cache
+# Loading work.memory
+# Loading work.bus
+# do parte2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mariz/Desktop/LAOC\ II/pratica4/parte2 {C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/parte2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module parte2
+# 
+# Top level modules:
+# 	parte2
+# vlog -vlog01compat -work work +incdir+C:/Users/mariz/Desktop/LAOC\ II/pratica4/parte2 {C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# vlog -vlog01compat -work work +incdir+C:/Users/mariz/Desktop/LAOC\ II/pratica4/parte2 {C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/cache.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cache
+# 
+# Top level modules:
+# 	cache
+# vlog -vlog01compat -work work +incdir+C:/Users/mariz/Desktop/LAOC\ II/pratica4/parte2 {C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# vlog -vlog01compat -work work +incdir+C:/Users/mariz/Desktop/LAOC\ II/pratica4/parte2 {C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/bus.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bus
+# 
+# Top level modules:
+# 	bus
+# 
+do {C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/simulation/modelsim/wave.do}
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+# 1
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/parte2/clock
+add wave -position 1 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/parte2/Instruc
+run -all

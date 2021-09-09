@@ -1,0 +1,105 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\mariz\Desktop\LAOC II\pratica4\parte2\simulation\modelsim
+vbus
+!i10b 1
+!s100 C^R=:U=Sz@dI6?1C@_DF02
+IZkZRNVQ]B@n4imj]zo7Ze3
+V1795lAJTz@WH1AW@YWnLY2
+Z1 dC:\Users\mariz\Desktop\LAOC II\pratica4\parte2\simulation\modelsim
+w1618346735
+8C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/bus.v
+FC:/Users/mariz/Desktop/LAOC II/pratica4/parte2/bus.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1618408380.042000
+!s107 C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/bus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mariz/Desktop/LAOC II/pratica4/parte2|C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/bus.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/mariz/Desktop/LAOC II/pratica4/parte2} -O0
+vcache
+IYXP2:Z2V@lbIF6MJT<08D3
+VoAo?mVLoWoX9B<czzg_Ud3
+R1
+w1618345371
+8C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/cache.v
+FC:/Users/mariz/Desktop/LAOC II/pratica4/parte2/cache.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Afn1RWdO7OlEao][Y;Uk61
+!s85 0
+!s108 1618408379.778000
+!s107 C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/cache.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mariz/Desktop/LAOC II/pratica4/parte2|C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/cache.v|
+!s101 -O0
+vcounter
+IOF2E>hh<VjO:OdhV8<gT]0
+VIbW<REEz?iH?]K]FKTI[`1
+R1
+w1618350826
+8C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/counter.v
+FC:/Users/mariz/Desktop/LAOC II/pratica4/parte2/counter.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 3ai`R]Nb[7j8>;o;BgYTm0
+!s85 0
+!s108 1618408379.644000
+!s107 C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mariz/Desktop/LAOC II/pratica4/parte2|C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/counter.v|
+!s101 -O0
+vmemory
+IK3;GAF_dcS`B?MCbSZNm?3
+V;7o823JQb5Hc67>NzmXRS0
+R1
+w1618354430
+8C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/memory.v
+FC:/Users/mariz/Desktop/LAOC II/pratica4/parte2/memory.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 K[N>Q=48L;oH<mUjd7`RH2
+!s85 0
+!s108 1618408379.905000
+!s107 C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mariz/Desktop/LAOC II/pratica4/parte2|C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/memory.v|
+!s101 -O0
+vparte2
+I]kMMYBmWKeKUD5`@N3gQ;1
+V2eDNinT@]cOdBzbnh<Ah81
+R1
+w1618343211
+8C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/parte2.v
+FC:/Users/mariz/Desktop/LAOC II/pratica4/parte2/parte2.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Kz`V`S2iSHTUH[_lN<AVz1
+!s85 0
+!s108 1618408379.425000
+!s107 C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/parte2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mariz/Desktop/LAOC II/pratica4/parte2|C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/parte2.v|
+!s101 -O0
