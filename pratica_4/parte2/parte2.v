@@ -1,69 +1,41 @@
-module parte2(clock, Instruc);
-
-  input clock;
-  input [9:0] Instruc;
-
-  // Cada instrução é dividida da seguinte maneira:
-  // Op    1 bit    X---------
-  // proc  2 bits   -XX-------
-  // tag   3 bits   ---XXX----
-  // valor 4 bits   ------XXXX
-  // TOTAL 10 bits
-
-  localparam [1:0] proc1 = 2'b00, proc2 = 2'b01;
-  localparam [1:0] ReadMiss = 2'b01, ReadHit = 2'b10, WriteBack = 2'b11;
-
-  wire [1:0] step;
-  wire [8:0] OutCache1, OutCache2, OutMemory, OutBus;
-  wire [8:0] q1, q2;
-
-  counter cnt (
-    .clock(clock),
-    .q(step)
-  );
-
-  cache #(
-    // COMPLETAR AQUI
-    .NAME(proc1), .FILE("C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/cache1.mem"),
-    .ReadMiss(ReadMiss), .ReadHit(ReadHit), .WriteBack(WriteBack)
-    ) cache1 (
-    .step(step),
-    .instruction(Instruc),
-    .InBus(OutBus),
-    .OutBus(OutCache1),
-    .q(q1)
-  );
-
-  cache #(
-    // COMPLETAR AQUI
-    .NAME(proc2), .FILE("C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/cache2.mem"),
-    .ReadMiss(ReadMiss), .ReadHit(ReadHit), .WriteBack(WriteBack)
-    ) cache2 (
-    .step(step),
-    .instruction(Instruc),
-    .InBus(OutBus),
-    .OutBus(OutCache2),
-    .q(q2)
-  );
-
-
-  memory #(
-    // COMPLETAR AQUI
-    .FILE("C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/memo.mem"),
-    .ReadMiss(ReadMiss),
-    .WriteBack(WriteBack)
-  ) Memo (
-    .bus(OutBus),
-    .q(OutMemory)
-  );
-
-  bus #(
-    .ReadHit(ReadHit)
-  ) Bus_data (
-    .proc1(OutCache1),
-    .proc2(OutCache2),
-    .Memory(OutMemory),
-    .q(OutBus)
-  );
-
+module parte2(comandProcessor, selectProcessor, clock);
+	input [11:0] comandProcessor;			// [11:9]endereco, 	[8]leitura ou escrita, 	[7:0]dado 
+	input [2:0]  selectProcessor;
+	
+	input clock;
+	
+	reg [7:0] memory[7:0]; reg [7:0] busSnoopy; reg [1:0] step;
+	
+	wire writeBackEnable; 	wire [1:0] busMensage1, busMensage2, busMensage3;
+	wire [7:0] busDada;		wire [2:0] busAddr;
+	
+	parameter emptyMessage = 2'b00;				parameter writeMissOnBusMessage = 2'b01;
+	parameter readMissOnBusMessage = 2'b10;	parameter invalidateOnBusMessage = 2'b11; 
+	
+	always @(posedge clock) begin
+		case(selectProcessor)
+			1:
+				if(busMensage1 == emptyMessage)begin
+					step = 0;
+				end
+			2:
+				if(busMensage2 == emptyMessage)begin
+					step = 0;
+				end	
+			3:
+				if(busMensage3 == emptyMessage)begin
+					step = 0;
+				end
+		endcase
+		
+		if((step == 2) && writeBackEnable)begin
+			memory[busAddr] = busDado;
+			busSnoopy = memory[comandProcessor[11:9]];
+		end
+		step = step + 1;
+	end
+	
+	cache c1(bus, busMensage1, busDado, busAddr, writeBackEnable,(selectProcessor == 1), comandProcessor, step, clock);
+	cache c2(bus, busMensage2, busDado, busAddr, writeBackEnable,(selectProcessor == 2), comandProcessor, step, clock);
+	cache c3(bus, busMensage3, busDado, busAddr, writeBackEnable,(selectProcessor == 3), comandProcessor, step, clock);
 endmodule

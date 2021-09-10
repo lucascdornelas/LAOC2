@@ -1,6 +1,6 @@
 
 State Machine - |parte1maq2|estado
-Name estado.invalid estado.10 estado.exclusive 
+Name estado.invalid estado.shared estado.01 
 estado.invalid 0 0 0 
-estado.exclusive 1 0 1 
-estado.10 1 1 0 
+estado.01 1 0 1 
+estado.shared 1 1 0 

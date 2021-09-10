@@ -2,24 +2,24 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\mariz\Desktop\LAOC II\pratica4\parte1\parte1maq2\simulation\modelsim
+Z0 dC:\Users\lucas\Documents\GitHub\LAOC2\pratica_4\parte1\parte1maq2\simulation\modelsim
 vparte1maq2
 !i10b 1
-!s100 [QFG_1GYk@CTQgf`>g;Jd3
-Im0CO_ZWLeUl_eBjG8iE]H2
-VnMZ7o83HLHdoMo?mdD=kc2
-Z1 dC:\Users\mariz\Desktop\LAOC II\pratica4\parte1\parte1maq2\simulation\modelsim
-w1618272243
-8C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/parte1maq2/parte1maq2.v
-FC:/Users/mariz/Desktop/LAOC II/pratica4/parte1/parte1maq2/parte1maq2.v
+!s100 OI>>gIao<a50hgBMolFNL3
+I_A_No66JLmWkMzil@S1AV2
+Vhb]00I?R^fbBlGH7VcB242
+Z1 dC:\Users\lucas\Documents\GitHub\LAOC2\pratica_4\parte1\parte1maq2\simulation\modelsim
+w1631243206
+8C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq2/parte1maq2.v
+FC:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq2/parte1maq2.v
 L0 1
 OV;L;10.1d;51
 r1
 !s85 0
 31
-!s108 1618410852.233000
-!s107 C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/parte1maq2/parte1maq2.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/parte1maq2|C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/parte1maq2/parte1maq2.v|
+!s108 1631297888.752000
+!s107 C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq2/parte1maq2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq2|C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq2/parte1maq2.v|
 !s101 -O0
 o-vlog01compat -work work -O0
-!s92 -vlog01compat -work work {+incdir+C:/Users/mariz/Desktop/LAOC II/pratica4/parte1/parte1maq2} -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq2 -O0

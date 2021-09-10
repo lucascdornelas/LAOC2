@@ -1,5 +1,5 @@
 Analysis & Synthesis report for parte2
-Wed Apr 14 10:52:06 2021
+Thu Sep 09 22:23:23 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,18 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: cache:cache1
- 10. Parameter Settings for User Entity Instance: cache:cache2
- 11. Parameter Settings for User Entity Instance: memory:Memo
- 12. Parameter Settings for User Entity Instance: bus:Bus_data
- 13. Port Connectivity Checks: "cache:cache2"
- 14. Port Connectivity Checks: "cache:cache1"
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -47,20 +36,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 14 10:52:06 2021           ;
+; Analysis & Synthesis Status        ; Failed - Thu Sep 09 22:23:23 2021               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; parte2                                          ;
 ; Top-level Entity Name              ; parte2                                          ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 11                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -160,384 +149,34 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                             ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
-; parte2.v                         ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/parte2.v  ;         ;
-; counter.v                        ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/counter.v ;         ;
-; cache.v                          ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/cache.v   ;         ;
-; memory.v                         ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/memory.v  ;         ;
-; bus.v                            ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/bus.v     ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 11    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-+---------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |parte2                    ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |parte2             ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cache:cache1                                    ;
-+----------------+-----------------------------------------------------------+-----------------+
-; Parameter Name ; Value                                                     ; Type            ;
-+----------------+-----------------------------------------------------------+-----------------+
-; NAME           ; 00                                                        ; Unsigned Binary ;
-; FILE           ; C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/cache1.mem ; String          ;
-; ReadMiss       ; 01                                                        ; Unsigned Binary ;
-; ReadHit        ; 10                                                        ; Unsigned Binary ;
-; WriteBack      ; 11                                                        ; Unsigned Binary ;
-+----------------+-----------------------------------------------------------+-----------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: cache:cache2                                    ;
-+----------------+-----------------------------------------------------------+-----------------+
-; Parameter Name ; Value                                                     ; Type            ;
-+----------------+-----------------------------------------------------------+-----------------+
-; NAME           ; 01                                                        ; Unsigned Binary ;
-; FILE           ; C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/cache2.mem ; String          ;
-; ReadMiss       ; 01                                                        ; Unsigned Binary ;
-; ReadHit        ; 10                                                        ; Unsigned Binary ;
-; WriteBack      ; 11                                                        ; Unsigned Binary ;
-+----------------+-----------------------------------------------------------+-----------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: memory:Memo                                   ;
-+----------------+---------------------------------------------------------+-----------------+
-; Parameter Name ; Value                                                   ; Type            ;
-+----------------+---------------------------------------------------------+-----------------+
-; FILE           ; C:/Users/mariz/Desktop/LAOC II/pratica4/parte2/memo.mem ; String          ;
-; ReadMiss       ; 01                                                      ; Unsigned Binary ;
-; WriteBack      ; 11                                                      ; Unsigned Binary ;
-+----------------+---------------------------------------------------------+-----------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: bus:Bus_data ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; ReadHit        ; 10    ; Unsigned Binary                  ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cache:cache2"                                                                       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cache:cache1"                                                                       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Apr 14 10:52:03 2021
+    Info: Processing started: Thu Sep 09 22:23:22 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off parte2 -c parte2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (12125): Using design file parte2.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: parte2
+Warning (10236): Verilog HDL Implicit Net warning at parte2.v(38): created implicit net for "bus"
+Warning (10236): Verilog HDL Implicit Net warning at parte2.v(38): created implicit net for "busDado"
 Info (12127): Elaborating entity "parte2" for the top level hierarchy
-Warning (12125): Using design file counter.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: counter
-Info (12128): Elaborating entity "counter" for hierarchy "counter:cnt"
+Warning (10036): Verilog HDL or VHDL warning at parte2.v(7): object "busSnoopy" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at parte2.v(35): truncated value with size 32 to match size of target (2)
 Warning (12125): Using design file cache.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: cache
-Info (12128): Elaborating entity "cache" for hierarchy "cache:cache1"
-Warning (10235): Verilog HDL Always Construct warning at cache.v(53): variable "EsseProc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(55): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(55): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(55): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(58): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(59): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(59): variable "Valor_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(66): variable "EsseProc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(68): variable "Op_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(69): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(69): variable "Valor_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(69): variable "Bloco" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(70): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(75): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(75): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(75): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(76): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(79): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(85): variable "EsseProc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(87): variable "Op_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(90): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(90): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(91): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(92): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(92): variable "Valor_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(94): variable "Bloco" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(101): variable "Tipo_Bus" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(102): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(102): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(102): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(103): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(103): variable "Valor_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(104): variable "Bloco" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(111): variable "EsseProc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(113): variable "Op_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(116): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(116): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(116): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(117): variable "Tag_Bus" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(117): variable "Valor_Bus" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(117): variable "Bloco" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(120): variable "Bloco" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10240): Verilog HDL Always Construct warning at cache.v(47): inferring latch(es) for variable "q", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "q[0]" at cache.v(47)
-Info (10041): Inferred latch for "q[1]" at cache.v(47)
-Info (10041): Inferred latch for "q[2]" at cache.v(47)
-Info (10041): Inferred latch for "q[3]" at cache.v(47)
-Info (10041): Inferred latch for "q[4]" at cache.v(47)
-Info (10041): Inferred latch for "q[5]" at cache.v(47)
-Info (10041): Inferred latch for "q[6]" at cache.v(47)
-Info (10041): Inferred latch for "q[7]" at cache.v(47)
-Info (10041): Inferred latch for "q[8]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][0]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][1]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][2]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][3]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][4]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][5]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][6]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][7]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][8]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][0]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][1]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][2]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][3]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][4]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][5]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][6]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][7]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][8]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][0]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][1]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][2]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][3]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][4]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][5]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][6]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][7]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][8]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][0]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][1]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][2]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][3]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][4]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][5]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][6]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][7]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][8]" at cache.v(47)
-Info (12128): Elaborating entity "cache" for hierarchy "cache:cache2"
-Warning (10235): Verilog HDL Always Construct warning at cache.v(53): variable "EsseProc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(55): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(55): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(55): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(58): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(59): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(59): variable "Valor_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(66): variable "EsseProc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(68): variable "Op_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(69): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(69): variable "Valor_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(69): variable "Bloco" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(70): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(75): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(75): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(75): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(76): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(79): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(85): variable "EsseProc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(87): variable "Op_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(90): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(90): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(91): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(92): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(92): variable "Valor_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(94): variable "Bloco" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(101): variable "Tipo_Bus" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(102): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(102): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(102): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(103): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(103): variable "Valor_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(104): variable "Bloco" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(111): variable "EsseProc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(113): variable "Op_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(116): variable "Tag_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(116): variable "Tag_instruc" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(116): variable "Estado_cache" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(117): variable "Tag_Bus" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(117): variable "Valor_Bus" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(117): variable "Bloco" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at cache.v(120): variable "Bloco" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10240): Verilog HDL Always Construct warning at cache.v(47): inferring latch(es) for variable "q", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "q[0]" at cache.v(47)
-Info (10041): Inferred latch for "q[1]" at cache.v(47)
-Info (10041): Inferred latch for "q[2]" at cache.v(47)
-Info (10041): Inferred latch for "q[3]" at cache.v(47)
-Info (10041): Inferred latch for "q[4]" at cache.v(47)
-Info (10041): Inferred latch for "q[5]" at cache.v(47)
-Info (10041): Inferred latch for "q[6]" at cache.v(47)
-Info (10041): Inferred latch for "q[7]" at cache.v(47)
-Info (10041): Inferred latch for "q[8]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][0]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][1]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][2]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][3]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][4]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][5]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][6]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][7]" at cache.v(47)
-Info (10041): Inferred latch for "memory[3][8]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][0]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][1]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][2]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][3]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][4]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][5]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][6]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][7]" at cache.v(47)
-Info (10041): Inferred latch for "memory[2][8]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][0]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][1]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][2]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][3]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][4]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][5]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][6]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][7]" at cache.v(47)
-Info (10041): Inferred latch for "memory[1][8]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][0]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][1]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][2]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][3]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][4]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][5]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][6]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][7]" at cache.v(47)
-Info (10041): Inferred latch for "memory[0][8]" at cache.v(47)
-Warning (12125): Using design file memory.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: memory
-Info (12128): Elaborating entity "memory" for hierarchy "memory:Memo"
-Warning (10235): Verilog HDL Always Construct warning at memory.v(23): variable "estado" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at memory.v(24): variable "valor" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at memory.v(24): variable "tag" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at memory.v(26): variable "estado" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at memory.v(27): variable "tag" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10240): Verilog HDL Always Construct warning at memory.v(22): inferring latch(es) for variable "q", which holds its previous value in one or more paths through the always construct
-Warning (10030): Net "memory.data_a" at memory.v(16) has no driver or initial value, using a default initial value '0'
-Info (10041): Inferred latch for "q[0]" at memory.v(22)
-Info (10041): Inferred latch for "q[1]" at memory.v(22)
-Info (10041): Inferred latch for "q[2]" at memory.v(22)
-Info (10041): Inferred latch for "q[3]" at memory.v(22)
-Info (10041): Inferred latch for "q[4]" at memory.v(22)
-Info (10041): Inferred latch for "q[5]" at memory.v(22)
-Info (10041): Inferred latch for "q[6]" at memory.v(22)
-Info (10041): Inferred latch for "q[7]" at memory.v(22)
-Info (10041): Inferred latch for "q[8]" at memory.v(22)
-Warning (12125): Using design file bus.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: bus
-Info (12128): Elaborating entity "bus" for hierarchy "bus:Bus_data"
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clock"
-    Warning (15610): No output dependent on input pin "Instruc[0]"
-    Warning (15610): No output dependent on input pin "Instruc[1]"
-    Warning (15610): No output dependent on input pin "Instruc[2]"
-    Warning (15610): No output dependent on input pin "Instruc[3]"
-    Warning (15610): No output dependent on input pin "Instruc[4]"
-    Warning (15610): No output dependent on input pin "Instruc[5]"
-    Warning (15610): No output dependent on input pin "Instruc[6]"
-    Warning (15610): No output dependent on input pin "Instruc[7]"
-    Warning (15610): No output dependent on input pin "Instruc[8]"
-    Warning (15610): No output dependent on input pin "Instruc[9]"
-Info (21057): Implemented 11 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 111 warnings
-    Info: Peak virtual memory: 4602 megabytes
-    Info: Processing ended: Wed Apr 14 10:52:06 2021
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+Warning (10222): Verilog HDL Parameter Declaration warning at cache.v(12): Parameter Declaration in module "cache" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Info (12128): Elaborating entity "cache" for hierarchy "cache:c1"
+Error (10996): Verilog HDL error at cache.v(3): parameter "readMiss" has no initial or actual value File: C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte2/cache.v Line: 3
+Error (10996): Verilog HDL error at cache.v(3): parameter "readHit" has no initial or actual value File: C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte2/cache.v Line: 3
+Error (10996): Verilog HDL error at cache.v(4): parameter "writeBack" has no initial or actual value File: C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte2/cache.v Line: 4
+Error (12152): Can't elaborate user hierarchy "cache:c1" File: C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte2/parte2.v Line: 38
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 4 errors, 8 warnings
+    Error: Peak virtual memory: 4574 megabytes
+    Error: Processing ended: Thu Sep 09 22:23:23 2021
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:01
 
 

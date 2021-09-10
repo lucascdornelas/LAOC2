@@ -20,3 +20,55 @@
 vsim work.parte1maq1
 # vsim work.parte1maq1 
 # Loading work.parte1maq1
+do C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq1/simulation/modelsim/wave1.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+add wave -position 1 -format Logic -height 17 -editable 2 Edit:/parte1maq1/clock
+force -freeze sim:/parte1maq1/counter 00 0
+run
+force -freeze sim:/parte1maq1/counter 01 0
+force -freeze sim:/parte1maq1/counter 01 0
+run
+force -freeze sim:/parte1maq1/counter 00 0
+run
+force -freeze sim:/parte1maq1/counter 10 0
+force -freeze sim:/parte1maq1/counter 10 0
+run
+force -freeze sim:/parte1maq1/counter 00 0
+run
+noforce sim:/parte1maq1/counter
+force -freeze sim:/parte1maq1/counter 11 0
+run
+restart -f
+force -freeze sim:/parte1maq1/counter 00 0
+run
+run
+restart -f
+force -freeze sim:/parte1maq1/counter 00 0
+run
+run
+force -freeze sim:/parte1maq1/counter 01 0
+run
+force -freeze sim:/parte1maq1/counter 10 0
+run
+force -freeze sim:/parte1maq1/counter 11 0
+run
+force -freeze sim:/parte1maq1/counter 10 0
+run
+force -freeze sim:/parte1maq1/counter 00 0
+run
+force -freeze sim:/parte1maq1/counter 11 0
+run
+restart -f
+force -freeze sim:/parte1maq1/counter 10 0
+run
+run
+restart -f
+force -freeze sim:/parte1maq1/counter 11 0
+run
+run
+run
+run
+run
+run
+wave editwrite -file C:/Users/lucas/Documents/GitHub/LAOC2/pratica_4/parte1/parte1maq1/simulation/modelsim/wave.do
